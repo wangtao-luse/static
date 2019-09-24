@@ -3,7 +3,7 @@ body{
 	color: #333;
 	font-family: "Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif;
 }
-body,div,ul,li,input,p,dd{padding: 0;margin: 0;}
+body,div,ul,li,dd,input,p{padding: 0;margin: 0;}
 
 img{
 	border: 0;
