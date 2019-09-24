@@ -749,7 +749,6 @@ height: 30px;
 .footer .house-link-box .tab{
 	width: 1000px;
 	height: 40px;
-	/*border: 1px solid white;*/
 	
 }
 .footer .house-link-box .tab span {
@@ -770,7 +769,6 @@ height: 30px;
 }
 
 .footer .link-list{
-	/*border: 1px solid yellow;*/
 	clear: both;
 }
 .footer .link-list div{
