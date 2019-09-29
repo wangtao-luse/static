@@ -1,0 +1,431 @@
+/** base css*/
+*{padding: 0;margin: 0;}
+body, h1, h2, h3, h4, h5, p, ul, ol, dl, dd, fieldset, textarea {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-size: 16px;
+} 
+body{
+	 line-height: 1.6;
+    font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f2f2f2;
+    letter-spacing: 0.034em;
+    }
+  
+a, button {
+    cursor: pointer;
+}
+
+a {
+    color: #576b95;
+    text-decoration: none;
+}
+
+ 
+    
+    
+ .wrapper{
+ 	background-color: #fff;
+ 	position: relative;
+ }   
+.rich_media_area_primary{	
+	padding: 32px 16px 12px;
+	max-width: 677px;
+	margin: 0 auto;
+}
+.rich_media_title{
+	font-size: 22px;
+	line-height: 1.4;
+	margin-bottom: 14px;
+}
+.rich_media_meta_list{
+	margin-bottom: 22px;
+	line-height: 20px;
+	word-wrap: break-word;
+    word-break: break-all;
+    position: relative;
+	
+}
+.rich_media_meta{
+	font-size: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px 10px 0;
+}
+.rich_media_meta_text{
+	color: rgba(0,0,0,0.3);
+	vertical-align: middle;
+}
+.profile_container{
+	width: 535px;
+	font-size: 14px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 10px;
+}
+.profile_inner{
+	position: relative;
+    padding: 30px 22px 36px 144px;
+    background-color: #fff;
+    border: 1px solid #d9dadc;
+}
+.profile_avatar{
+	position: absolute;
+    width: 100px;
+    left: 24px;
+    top: 24px;
+    height: 100px!important;
+}
+.profile_nickname{
+	font-size: 16px;
+	font-weight: 400;
+}
+.profile_meta{
+	margin-top: 5px;
+	overflow: hidden;
+}
+.profile_meta_label{
+	float: left;
+	width: 4em;
+	margin-right: 1em;
+}
+.profile_meta_value {
+    display: block;
+    overflow: hidden;
+    color: #adadad;
+}
+.rich_media_content{
+	max-width: 100%!important;   
+    word-wrap: break-word!important;
+}
+.media_selection p{
+	text-align: center;
+	line-height: 2em;
+	letter-spacing: 1px;
+	clear: both;
+    min-height: 1em;
+}
+.media_selection p span{
+	font-size: 15px;
+	color: rgb(89, 89, 89);
+	font-family: Helvetica, Arial, sans-serif;
+}
+.media_selection .img-gif{
+	width:  220px !important;
+    height: auto !important;
+    visibility: visible !important;
+}
+.big-img{
+	overflow-wrap: break-word !important;
+    visibility: visible !important;
+    width: 100% !important;
+    height: auto !important;
+}
+.middle-img{
+	overflow-wrap: break-word !important;
+    visibility: visible !important;
+    width: 508px !important;
+    height: auto !important;
+}
+.selection_title_box{
+	letter-spacing: 0.544px;
+    background-color: rgb(255, 255, 255);
+    font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;
+    overflow-wrap: break-word !important;
+}
+.selection_title_box .wra{
+	text-align: center;
+    overflow-wrap: break-word !important;
+}
+
+.place-box{
+	display: inline-block;
+    overflow-wrap: break-word !important;
+    
+}
+
+.place_first_border{	
+	display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(51, 51, 51);
+    border-radius: 8px;
+    background-image: initial;
+    background-position: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    overflow-wrap: break-word !important;
+}
+.borde_padding{
+	padding: 4px;
+	overflow-wrap: break-word !important;
+}
+.border-middle{
+	margin-top: -25px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(51, 51, 51);
+    border-radius: 8px;
+    background-image: url(../img/shenzhen/border-bg.png);
+    background-position: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    overflow-wrap: break-word !important;
+}
+
+.place-text{
+	display: inline-block;
+	padding: 6px 1em;
+	background: rgb(242, 187, 66);
+	border-radius: 8px;
+	color: rgb(255, 255, 255);
+	line-height: 1.75em;
+	overflow-wrap: break-word !important;
+}
+.picnic-img{
+	margin: 5px auto;
+    white-space: normal;
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    font-family: tahoma, verdana, helvetica;
+    overflow-wrap: break-word !important;
+    visibility: visible !important;
+    width: 677px !important;
+    height: auto !important;
+}
+
+.infomation{
+	letter-spacing: 0.544px;
+    background-color: rgb(255, 255, 255);
+    font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word!important;
+    padding-right: 3px;
+    padding-bottom: 3px;
+   
+}
+.info-wra{
+	padding: 20px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(67, 97, 101);
+    box-shadow: rgb(207, 207, 206) 3px 3px 0px;
+    overflow-wrap: break-word !important;
+    
+}
+.important-info{
+	color: rgb(73, 73, 72);
+    font-size: 14px;
+    overflow-wrap: break-word !important;
+
+}
+.important-info p{
+	text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-family: 微软雅黑, Arial, sans-serif;
+    overflow-wrap: break-word !important;
+    outline: none 0px !important;
+}
+
+.important-info span{
+	font-family: Helvetica, Arial, sans-serif;
+}
+.important-info strong{
+	overflow-wrap: break-word !important;
+}
+.important-info strong span{
+	font-size: 15px;
+    color: rgb(89, 89, 89);
+    overflow-wrap: break-word !important;
+    outline: none 0px !important;
+}
+
+.media_selection p span.red_color{
+	color: rgb(192, 0, 0);
+}
+.media_selection p span.from{
+	color: rgb(89, 89, 89);
+    font-size: 12px;
+    overflow-wrap: break-word !important;
+}
+
+.footer{
+	font-size: 16px;
+}
+.footer-wra{
+	font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    white-space: normal;
+    border-width: 0px;
+    border-style: initial;
+    border-color: currentcolor;
+    text-align: left;
+    line-height: 25.6px;
+    widows: 1;
+    background-color: rgb(255, 255, 255);
+    font-family: -apple-system-font, BlinkMacSystemFont, Arial, sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.footer-content{
+	border-width: 8px 1px 1px;
+    border-style: solid;
+    border-color: rgb(99, 135, 146) rgb(204, 204, 204) rgb(204, 204, 204);
+    box-shadow: rgb(204, 204, 204) 0px 0px 8px;
+}
+.footer-content .f-title{
+	text-align: center;
+    padding: 5px 10px;
+    color: rgb(62, 62, 62);
+    line-height: 2em;
+    letter-spacing: 0.54px;
+    font-size: 24px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.footer-content .f-main-content{
+	padding: 10px;
+    border-top: 1px solid rgb(204, 204, 204);
+    font-size: 14px;
+}
+.footer.f-main-content .middle-img-box{
+	text-align: center;
+    color: rgb(62, 62, 62);
+    line-height: 2em;
+    letter-spacing: 0.54px;
+    font-family: Helvetica, Arial, sans-serif
+}
+.footer .f-main-content .main-img-box .f-main-img{
+	width: 552px !important;
+    height: auto !important;
+    visibility: visible !important;
+}
+
+.footer .main-img-box .f-img-middle{
+	color: rgb(0, 0, 0);
+    font-size: 16px;
+    caret-color: rgb(255, 0, 0);
+    max-inline-size: 100%;
+    font-family: 微软雅黑, Arial, sans-serif;
+    outline: 0px !important;
+    width: 677px !important;
+    height: auto !important;
+    visibility: visible !important;
+}
+.footer span.font-red{
+	color: #ab1942;
+}
+
+.footer .f-bottom-box{
+	white-space: normal;
+	
+}
+.footer .f-bottom-box span{
+	color: rgb(165, 165, 165);
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.footer .text_left{
+	text-align: left;
+	}
+.media_selection p.f-bottom-box{
+	text-align: left;
+	
+}
+
+#f-bottom span{
+	color: rgb(165, 165, 165);
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.footer .f-bottom-box-center{
+	white-space: normal;
+    text-align: left;
+    color: rgb(62, 62, 62);
+    line-height: 25.6px;
+}
+.footer .f-bottom-box-wra{
+	text-align: left;
+    line-height: 25.6px;
+	
+}
+#f-bottom .f-bottom-box-wra p{
+	text-align: right;
+    letter-spacing: 0.54px;
+}
+
+#f-bottom .f-bottom-box-wra span{
+	color: rgb(89, 89, 89);
+    line-height: 25.6px;
+    letter-spacing: 0.54px;
+    font-size: 13.33px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#f-bottom .f-bottom-box-wra .gif{
+	border-width: 0px;
+    text-align: justify;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+    letter-spacing: 0.54px;
+    font-size: 15px;
+    vertical-align: -4px;
+    font-family: Arial, sans-serif;
+    visibility: visible !important;
+    width: 18px !important;
+    height: auto !important;
+}
+#f-bottom .f-bottom-box-wra .gif-img{
+	line-height: 25.6px;
+    letter-spacing: 0.54px;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: top;
+    visibility: visible !important;
+    width: 45px !important;
+    height: auto !important;
+}
+
+.js_pc_qr_code{
+	position: relative;
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.qr_code_pc{
+	box-sizing: border-box;
+	position: fixed;
+    right: 260px;
+    top: 33px;
+    width: 140px;
+    padding: 16px;
+    border: 1px solid #d9dadc;
+    background-color: #fff;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-attachment: fixed;
+}
+.qr_code_pc p{
+	font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+#js_pc_qr_code_img{
+	width: 102px;
+    height: 102px;
+}
