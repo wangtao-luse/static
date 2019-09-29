@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*
+			 提升指定样式规则的应用优先权
+			 Selector{sRule!important;}
+			 box{color:red !important;}
+			  在CSS中，通过对某一样式声明! important ，可以更改默认的CSS样式优先级规则，使该条样式属性声明具有最高优先级
+			 * */
+			.wrapper{
+				width: 1150px;
+				margin: 0 auto;
+			}
+			.main p span{
+				font-size: 18px!important;
+				color: red;
+			}
+			.main p span.font-red{
+				font-size: 28px;
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main">
+				<p>
+					<span>地址：</span>
+					<span>上海市宝山区菊盛路</span>
+				</p>
+				<p>
+					<span class="font-red">地址：</span>
+					<span class="font-red">上海市宝山区菊盛路851弄</span>
+				</p>
+			</div>
+			
+		</div>
+	</body>
+</html>
