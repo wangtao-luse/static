@@ -11,3 +11,4 @@
 	text-overflow:ellipsis;
 6.增加或减少字符间的空白（字符间距）
 letter-spacing:0;
+7.transform

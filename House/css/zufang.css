@@ -1,6 +1,9 @@
 body{
 	color: #101d37;
 }
+input{
+	vertical-align: middle;
+}
 .wrapper{
 	
 }
@@ -142,6 +145,7 @@ body{
 
 .filter{	
 	padding-top: 15px;
+	position: relative;
 }
 .filter .filter-wrapper{
 	width: 1150px;
@@ -162,4 +166,136 @@ body{
 	margin-top: 9px;
 	margin-bottom: 9px;
 	
+}
+.filter ul li a{
+	display: block;
+	font-size: 12px;
+	color: #565656;
+}
+.filter li a:hover{
+	color: #00ae66;
+}
+.filter .strong a{
+	color: #00ae66!important;
+	font-weight: 700!important;
+}
+.filter .filter-item-level1{
+	margin-right: 18px;
+}
+.filter .filter-item-level1 a{
+	color: #333;
+	font-size: 14px;
+	padding-right: 20px;
+}
+.filter .filter-item-level1.down a{
+	background-image: url(../img/zufang/up.png);
+	background-repeat: no-repeat;
+	background-position: 100%;
+	background-size: auto 6px; 
+	
+}
+.filter .filter-item-level1 a{
+	background-image: url(../img/zufang/down.png);
+	background-repeat: no-repeat;
+	background-position: 100%;
+	background-size: auto 6px; 
+}
+.filter .filter-item-aside a{
+	font-size: 14px;
+	font-weight: 700;
+}
+.filter .filter-item-level2{
+	margin-right: 24px;
+}
+.filter .filter-item-level2 a{
+	 color: #333;
+	 font-size: 14px;
+}
+.filter .check a:before{
+	content: " ";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../img/zufang/check.png) no-repeat;
+	background-size: 14px 14px;
+	background-position: 0 0;
+	vertical-align: -2px;
+	margin-right: 6px;
+}
+.filter .checked a:before{
+	content:" ";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../img/zufang/checked.png) no-repeat;
+	background-size: 14px 14px;
+	checked
+	vertical-align: -2px;
+	margin-right: 6px;
+}
+.filter .filter-item-input{
+	margin-top: 2px;
+    margin-left: -2px;
+    font-size: 12px;
+    color: #101d37;
+}
+.filter input{
+	border-color: #e5e5e5;
+    box-shadow: 0 3px 5px 0 #e5e5e5;
+}
+.filter .filter-item-input input{
+	width: 46px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.filter .filter-button:before{
+	content: "确定";
+	color: #00ae66;
+	cursor: pointer;
+}
+.filter .filter-item-more{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	color: #9399a5;
+	font-size: 13px;
+	cursor: pointer;
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	line-height: 30px;
+	margin-left: -50px;
+	background:#fff;
+}
+.filter .filter-item-more .more-ico.up{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	vertical-align: top;
+	margin-top: 8px;
+	margin-left: 8px;
+	background: url(../img/zufang/more_up.png) no-repeat 50%;
+	background-size: 13px;
+	transform: rotate(180deg);
+	
+	
+}
+.filter .filter-item-more .more-ico.down{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	vertical-align: top;
+	margin-top: 8px;
+	margin-left: 8px;
+	background: url(../img/zufang/more_up.png) no-repeat 50%;
+	background-size: 13px;
+	/*transform: rotate(180deg);*/
 }
