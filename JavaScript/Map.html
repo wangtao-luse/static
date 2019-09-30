@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/**https://www.runoob.com/jsref/jsref-operators.html
+			 * JavaScript中的比较运算符:
+			 *  ==:等于
+			 *  ===：值及类型相等(恒等于)
+			 * !=:不等于
+			 * !==：值与类型均不相等（恒不等于）
+			 * >大于
+			 * >=大于等于
+			 * <小于
+			 * <= 小于等于
+			 * https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map
+			 * Map 对象保存键值对。任何值(对象或者原始值) 都可以作为一个键或一个值。
+			 * 语法：new Map([iterable])
+			 * 参数:iterable
+					Iterable 可以是一个数组或者其他 iterable 对象，
+					其元素为键值对(两个元素的数组，例如: [[ 1, 'one' ],[ 2, 'two' ]])。
+					每个键值对都会添加到新的 Map。null 会被当做 undefined。
+			  属性：
+			   size：返回Map对象的键/值对的数量。
+			 方法：
+			 clear();移除Map对象的所有键/值对 。
+			    描述：一个Map对象在迭代时会根据对象中元素的插入顺序来进行
+			        — 一个  for...of 循环在每次迭代后会返回一个形式为[key，value]的数组。
+			  键的比较
+			    键的比较是基于 "SameValueZero" 算法：NaN 是与 NaN 相等的（虽然 NaN !== NaN），
+			    剩下所有其它的值是根据 === 运算符的结果判断是否相等。
+			    在目前的ECMAScript规范中，-0和+0被认为是相等的;
+			 */
+			/***/
+			var map_zero = new Map();
+			var map_one = new Map([[1,"one"],[2,"two"]]);
+			var keyObject ={};
+			var keyString="Ben";
+			var keyfunction=function(){};
+			var nan=NaN;
+			//添加键
+			map_zero.set(keyObject,"keyObject相关值");
+			map_zero.set(keyfunction,"和keyfunction关联的值");
+			map_zero.set(keyString,"Ben");
+			map_zero.set(nan,NaN);
+			//返回Map对象的键/值对的数量
+			console.log(map_zero.size);
+			//读取值
+			var temp_keyObject = map_zero.get(keyObject);
+			console.log(temp_keyObject);//keyObject相关值
+			var temp_keyfunction = map_zero.get(keyfunction);
+			console.log(temp_keyfunction);//和keyfunction关联的值
+			var temp_keyString = map_zero.get(keyString);
+			console.log(temp_keyString);//Ben
+			
+			
+			var tmp_keyString = map_zero.get("Ben");
+			console.log(tmp_keyString);//Ben  因为keyString===Ben 
+            console.log(map_zero.get({}));//undefined keyObject！=={}
+            console.log(map_zero.get(function(){}));//undefined keyfunction!== function(){}
+           //typeof 
+            console.log(typeof keyString+"--"+ typeof "Ben");//string string
+            console.log("Ben"===keyString);            
+            console.log(typeof keyObject+"--"+ typeof {});//object object
+            console.log({}===keyObject);
+            console.log(typeof keyfunction +"---"+ typeof function(){});//function fuction
+            console.log(keyfunction===function(){});
+            console.log(undefined==undefined);//true
+            console.log(undefined===undefined);//true
+            var b;
+            var a;
+            console.log(a==b);//true
+            console.log(a===b);//true
+            console.log(typeof NaN);//number
+            console.log(NaN==NaN);//false
+            console.log(NaN===NaN);//false
+            console.log(NaN!==NaN);//true
+            console.log(NaN!=NaN);//true
+			
+			console.log(map_zero.get(nan));
+			console.log(map_zero.get(NaN));
+		    //迭代
+			map_zero.forEach(function(value,key){
+				console.log(key+"---"+value)
+			})
+			 var bl=true;
+			  console.log(typeof bl==typeof 1)   
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
