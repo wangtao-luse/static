@@ -4,13 +4,13 @@ img, input, select {
 .content{
 	width: 1150px;
 	margin: 0 auto;
-	border: 1px solid black;
 }
 .content .content-title{
 	color: #101d37;
 	font-size: 28px;
 	font-weight: bold;
 	line-height: 40px;
+	
 }
 .content .content_subtitle{
 	color: #9399a5;
@@ -28,6 +28,7 @@ img, input, select {
 .content .content_subtitle ul li{
 	margin-right: 0;
 	padding-bottom: 2px;
+	position: relative;
 }
 .content .content_subtitle .duty-ico{
 	width: 20px;
@@ -43,13 +44,31 @@ img, input, select {
 	cursor: pointer;
 	text-decoration: underline;
 }
-.content .content_subtitle .duty-title{
-	text-decoration: underline;
-}
+
 .content .content_subtitle .duty-title.duty-title-span{
 	margin-left: 2px;
 }
 
+.content .content_subtitle .duty-pop{
+	position: absolute;
+	right: 0;
+	left: auto;
+	max-height: 520px;
+	line-height: 20px;
+	width: 500px;
+	text-align: center;
+	color: #586173;
+	font-size: 12px;
+	font-weight: 400;	
+	padding: 20px 20px 0;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+	background: #fff;
+	white-space: normal!important;
+	overflow-y:auto;
+	display: none;
+}
 .duty-pop img{
 	width: 460px;
 }
