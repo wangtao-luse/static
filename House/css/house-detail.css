@@ -1,0 +1,55 @@
+img, input, select {
+    vertical-align: middle;
+}
+.content{
+	width: 1150px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+.content .content-title{
+	color: #101d37;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.content .content_subtitle{
+	color: #9399a5;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.content .content_subtitle i{
+	margin-left: 14px;
+}
+.content .content_subtitle ul{
+	display: inline-block;
+	margin-left: 50px;
+}
+.content .content_subtitle ul li{
+	margin-right: 0;
+	padding-bottom: 2px;
+}
+.content .content_subtitle .duty-ico{
+	width: 20px;
+	height: 15px;
+	vertical-align: top;
+	margin-top: 2px;
+}
+.content .content_subtitle span{
+	color: #9399a5;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.content .content_subtitle .duty-title{
+	text-decoration: underline;
+}
+.content .content_subtitle .duty-title.duty-title-span{
+	margin-left: 2px;
+}
+
+.duty-pop img{
+	width: 460px;
+}

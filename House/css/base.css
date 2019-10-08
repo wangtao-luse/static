@@ -43,3 +43,6 @@ p{/*待研究*/
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.hide{
+	display: none;
+}

@@ -1,0 +1,203 @@
+.header{
+	width: 100%;
+	height: 36px;
+	background: #303035;
+	box-shadow: 0 1px 0 0 #e4e6f0;
+	
+}
+.header-wrap{
+	width: 1150px;
+	margin: 0 auto;
+	line-height: 36px;
+	color: #9399a5;
+	font-size: 12px;
+
+}
+.header ul li{
+	float: left;
+	margin-right: 22px;
+	}
+.header ul li a{
+	color: #9399a5;
+	padding: ;
+}
+.header .header-aside span{
+	font-size: 12px;
+}
+.header ul li.header-aside{
+	float: right;
+}
+
+.header .header-aside:before{
+	content: "";
+	display: inline-block;
+	background: url(../img/zufang/user_icon.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	vertical-align: top;
+	margin-top:10px ;
+	margin-right: 6px;
+}
+
+.serach_area{
+	width: 100%;
+	min-width: 1150px;
+	height: 155px;
+	padding: 25px 0;
+	background:#f5f5f6 ;
+	
+}
+.serach_area .house-nav{
+	width: 1150px;
+	margin: 0 auto 27px;
+}
+.serach_area .house-nav .house-logo{
+	display: inline-block;
+	width: 88px;
+	height: 30px;
+	background: url(../img/zufang/sprite_BAK2.png) no-repeat;
+	background-position: -375px -235px;
+	margin-right: 20px;
+	vertical-align: bottom;
+	
+}
+.serach_area .house-nav ul{
+	display: inline-block;
+}
+.serach_area .house-nav ul li{
+	display: inline-block;
+	vertical-align: bottom;
+	font-weight: 700;
+	margin-right: 30px;
+	line-height: 25px;
+	font-size: 16px;
+}
+.serach_area .house-nav ul li a{
+	color: #101D37;
+}
+.serach_area .house-nav ul li a.cur{
+	color: #00ae66;
+}
+
+.serach_area .serach{
+	width: 1150px;	
+	margin: 20px auto 24px auto;
+}
+.serach_area .serach .serach-wrapper{
+	display: inline-block;
+	width: 710px;
+	height: 44px;
+	line-height: 46px;
+	font-size: 14px;	
+	background-color: #fff;
+	box-shadow: 0 1px 2px -1px rgba(0,0,0,0.2);
+	
+}
+.serach_area .serach .serach-wrapper .input-text{
+	color: #101d37;
+	font-size: 13px;
+	width: 668px;
+	height: 44px;
+	padding: 16px 23px 17px;
+	border: 0;
+	box-sizing: border-box;
+	float: left;
+	outline: none;
+	
+	
+}
+.serach_area .serach .serach-wrapper .serach-btn{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	color: transparent;
+	background: url(../img/zufang/search.jpg) no-repeat;
+	background-position: 0 0;
+	margin-top: 3px;
+	margin-left: 4px;
+}
+
+
+
+.footer{
+	margin-top: 20px;
+	font-size: 14px;
+	height: 426px;
+	background: url(../img/index/footer-bg.jpg) no-repeat top #222;
+}
+.footer .footer_wrapper{
+	width: 1150px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+.footer .footer_wrapper .footer_top{
+	height: 75px;
+	line-height: 75px;
+	padding-right: 150px;
+	font-size: 14px;
+	border-bottom: 1px solid #393939;
+	position: relative;
+}
+.footer .footer_wrapper .footer_top .footer_light{
+	font-weight: 400;
+	height: 75px;
+	overflow: hidden;
+	
+}
+.footer .footer_wrapper .footer_top .footer_light li a{
+	display: inline-block;
+	color: #FFF;
+	font-size: 16px;
+	margin-right: 15px;
+	
+}
+.footer .footer_wrapper .footer_top .footer_aside{
+	color: #7dcfa0;
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+.footer .footer_wrapper .footer_middle{
+	line-height: 20px;
+	padding: 13px 0 20px;
+	font-size: 12px;
+	margin-bottom: 22px;
+	border-bottom: 1px solid #393939;
+
+}
+.footer .footer_wrapper .footer_middle ul:first-child{
+	margin-bottom: 14px;
+}
+.footer .footer_wrapper .footer_middle ul li{
+	display: inline-block;
+}
+.footer .footer_wrapper .footer_middle ul.parentList a{
+	padding: 8px 10px;
+	color: #888c8e;
+	background: #121212;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	
+}
+.footer .footer_wrapper .footer_middle ul.parentList a.cur,.footer .footer_wrapper .footer_middle ul.parentList a:hover{
+	background: #394043;
+	color: #fff;
+}
+.footer .footer_wrapper .footer_middle ul.childrenList a{
+	color: #888c8e;
+	display: inline-block;
+	margin-right: 15px;
+}
+.footer .footer_bottom{
+	color: #888c8e;
+	font-size: 12px;
+	line-height: 20px;
+}
+.footer .footer_bottom img{
+	margin-right: 5px;
+	}
+.footer .footer_bottom a{
+	color: #888c8e;
+	line-height: 20px;
+	height: 20px;
+}
