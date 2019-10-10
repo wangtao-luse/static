@@ -19,7 +19,7 @@ p{/*待研究*/
 	margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 100%;/*设置字体大小为默认大小,相对于浏览器默认字体大小或 继承body设置的字体大小*/
     font: inherit;
     vertical-align: baseline;
 }
