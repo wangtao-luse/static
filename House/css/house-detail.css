@@ -422,6 +422,11 @@ img, input, select {
 }
 .content .content_article_info h3{
 	color: #101d37;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 33px;
+	margin-top: 31px;
+	margin-bottom: 32px;
 }
 .content .content_article_info ul{
 	overflow: hidden;
