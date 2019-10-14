@@ -6,6 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.js.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		
 	</head>
 	<body>
 		<div class="header">
@@ -458,7 +461,7 @@
 						<div class="login-panel-hint">
 							<div class="login-panel-go">
 								已有账号？
-								<a href="#">去登录</a>
+								<a href="#" class="btn-login">去登录</a>
 							</div>
 							
 						</div>
@@ -487,9 +490,18 @@
 	                        <em class="password-view"></em>
 	                    </li>
                 	  </ul>
-						
-					</form>
-				    <div class="login_protocol protocol">
+                	  <!--登录 7天免登录--->
+                	  <div class="login_remember remember" >
+	                    <label class="checkbox-btn">
+	                        <input type="checkbox" name="remember" data-defval="1" class="mind-login remember_input" checked="" value="1">
+	                        <span class="checkbox"></span>7天内免登录
+	                    </label>
+                    	<div class="login_panel_forget_password">
+                    		<a href="#">忘记密码</a>
+                    	</div>
+                	  </div>
+                	   <!--注册协议---->
+					  <div class="login_protocol protocol">
 				    	<label class="checkbox-btn">
                         	<input type="checkbox" name="protocol"  dat class="mind-login protocol_input" checked="" value="1">
                         	<span class="checkbox"></span>我已阅读并同意
@@ -498,7 +510,20 @@
                     	</label>
                     	
 				    </div>
-					<div class="btn confirm_btn login_panel_op login_submit _bgcolor">注册</div>
+				    <div class="btn confirm_btn login_panel_op login_submit _bgcolor">注册</div>
+				    <!--登录按钮底部-->
+				    <div class="login_panel_change_login_type" style="display: none;">
+				    	<a href="#" class="change_login_type common">账号密码登录</a>
+				    	<p class="longin_type_bottom_text">
+				    		登录即代表同意
+				    		<a href="#" class="link-btn-color">《链家隐私政策》</a>
+				    		及
+				    		<a href="#" class="link-btn-color">《链家用户使用协议》</a>
+				    	</p>
+				    </div>
+					</form>
+				    
+					
 				</div>
 			</div>
 		</div>

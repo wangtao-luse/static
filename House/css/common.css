@@ -203,6 +203,7 @@
 }
 
 .login_layer{
+	display: none;
 	font-size: 14px;
 	position: fixed;
 	top: 0;
@@ -288,6 +289,7 @@
 	width: 282px;
 	height: 50px;
 	line-height: 50px;
+	color: #101D37;
 	font-size: 14px;
 	outline: none;
 }
@@ -326,13 +328,25 @@
 .login_layer .login-panel form .input_box .form_input_item .last_child{
 	padding: 0 0 2px 2px;
 }
-.login_layer .login-panel .login_protocol{
+.login_layer .login-panel .login_protocol,.login_layer .login-panel .login_remember{
 	color: #555;
     /*clear: both;*/
     position: relative;
     line-height: 23px;
     margin: 24px 0;
     overflow: hidden;
+}
+.login_layer .login-panel .login_remember .login_panel_forget_password{
+	color: #101D37;
+	cursor: pointer;
+	line-height: 23px;
+	font-size: 14px;
+	float: right;
+	
+}
+.login_layer .login-panel .login_remember .login_panel_forget_password a{
+	color: #39AC6A;
+	
 }
 .login_layer .login-panel .login_protocol .checkbox-btn{
 	cursor: pointer;
@@ -387,4 +401,25 @@
     text-align: center;
     border-radius: 2px;
     margin-top: 24px;
+}
+.login_layer .login-panel form .change_login_type{
+	display: inline-block;
+	padding: 24px 0 0;
+	height: 14px;
+	line-height: 14px;
+	color: #39AC6A;
+	cursor: pointer;
+}
+.login_layer .login-panel form .longin_type_bottom_text{
+	color: #AAA;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 10px;
+}
+.login_layer .login-panel form .longin_type_bottom_text .link-btn-color{
+	color: inherit;
+	cursor: pointer;
+}
+.login_layer .login-panel form .longin_type_bottom_text .link-btn-color:hover{
+	text-decoration: underline;
 }
