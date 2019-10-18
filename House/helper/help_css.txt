@@ -257,6 +257,6 @@ transform: translate(-50%, -50%);
 ul li:nth-of-type(3n+1){}
 ul li a:hover{}
 li:first-of-type{}
-2.伪类对象选择器
+2.伪类对象选择器（content属性必须）
 clearfix:after{}
 i.before{}

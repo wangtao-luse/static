@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script>
+	   /*	函数声明方式*/
+		function sum(){
+			console.log("函数声明方式");
+		}
+		/*函数表达式声明方式*/
+		var add=function(){
+			console.log("函数表达式声明方式");
+		}
+		/*使用Function构造函数*/
+		var fun=new Function();
+		sum();
+		add();
+		fun();
+		
+		var df={"name":"zhangsan"};
+		console.log(typeof df);
+		console.log(df.name);
+		
+		
+		/*函数调用
+		  有返回值的情况下可以接收到返回值;
+		 如果没有返回，接收返回undefined
+		 * **/
+		function a(){
+			return true;
+		}
+		function b(){
+			var ret=a();
+			console.log(ret);
+		}
+		b();
+		
+		function c(){
+			console.log("function c(){}")
+		}
+		function d(){
+			var tmp = c();
+			console.log(tmp);//undefined
+			console.log("temp");
+		}
+		d();
+		
+		/**回调函数
+		 * 第一种写法
+		 * **/
+		function c1(url,callback){
+			console.log("c1()");
+		    callback(url);
+		}
+		c1("call.html",function(url){
+			console.log("回调成功！")
+		})
+		/**第二种写法**/
+		function c2(url,callback){
+			console.log("c2()"+url);
+			callback();
+		}
+		function c3(){
+			console.log("我是c2的回调函数！");
+		}
+		c2("c2.html",c3);
+	</script>
+	<body>
+	</body>
+</html>

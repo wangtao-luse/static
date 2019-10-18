@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/common/jquery-3.4.1.js.js" ></script>
+		<script>
+		function a1(){
+			$.ajax({
+				url:"index.html",
+				data:{},
+				method:"post",
+				dataType:"json",
+				success:function(data){
+					console.log("ajax success！");
+					return true;
+				},
+				error:function(){
+					console.log("出错了！");
+					return false;
+				}
+			});
+				
+		}
+		function b1(){
+			var ret = a1();
+			console.log(ret);//undefined
+			console.log("result");
+		}
+		b1();//因为使用ajax异步请求，调用a1()的时候，不等Ajax执行完，就执行了下一行的
+		     //console.log(ret); 
+		</script>
+			<script>
+
+			$.ajax({
+				type:"post",
+				url:"/zufang",
+				async:true,
+				dataType:"json"
+				contentType:"application/json; charset=utf-8",
+				beforeSend:function(){},
+				success:function(){},
+				complete:function(){},
+				error:function(){}
+				
+			});
+			
+			
+		var postAjax = function(url,postData,successFunction,option){
+			var returnFlag=false;
+			var defaultOptions={
+				type:"post",
+				async:true,
+				errorFunction:errorFunction,
+				successArguments: "",
+        		errorArguments: "",
+				contentType:"application/json; charset=utf-8",/*传入数据类型*/
+				dataType:"json"/* 返回的数据类型*/
+			};			
+			var currentOptions = $.extend(defaultOptions, options);//https://www.runoob.com/jquery/misc-extend.html
+			$.ajax({
+				type:currentOptions.type,
+				url:url,
+				data:postData,
+				async:currentOptions.async,
+				contentType:currentOptions.contentType,
+				dataTyp:currentOptions.dataType,
+				beforeSend:function(){
+					loading();
+				},
+				success:function(resultData){
+					if(resultData&&isSuccess(resultData.resultCode)){
+						if(defaultOptions&&defaultOptions.successArguments){
+							sucessFunction(resultData,defaultOptions.successArguments);
+						}else{
+							sucessFunction(resultData);
+						}
+						returnFlag=true;
+					}else{
+						defaultOptions.errorFunction(resultData);
+						returnFlag=false;
+					}
+					
+					
+				},
+				complete:function(){
+					deleteLoading();
+				},
+				error:function(result){
+					deleteLoading();
+				},
+				
+				
+			});
+		}
+		function loading(){
+			
+		}
+		function deleteLoading(){
+			
+		}
+		function isSuccess(resultCode){
+			return ("10"===resultCode)
+		}
+		function errorFunction(resultData) {
+    		showMessage(resultData);
+		}
+
+		function showMessage(resultData) {
+		    alert(resultData.description);
+		}
+		//调用
+		var url="";
+		var date={};
+		postAjax(
+			url,
+			JSON.stringify(date),
+			function(){},
+			{"contentType": "application/json; charset=utf-8"}
+			)
+		postAjax(
+			url,
+			JSON.stringify(date),
+			function(){},
+			{"errorFunction":function(){},"contentType": "application/json; charset=utf-8"}
+			)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
