@@ -6,7 +6,6 @@
 	border: 1px solid red;
 }
 .header .topNavWrapper{
-	min-width: 1190px;
 	background: #fafafa;
 	border-bottom: 1px solid #eee;
 }
@@ -15,5 +14,46 @@
 	height: 28px;
 	line-height: 28px;
 	margin: 0 auto;
+	
 }
-
+.header .topNavPanel a{
+	color: #999;
+}
+.header .topNavPanel .topLogin{
+	width: 600px;
+	height: 29px;
+	float: left;
+}
+.header .topNavPanel .topLogin>span{
+	color: #999;
+}
+.header .topNavPanel .topNav{
+	float: right;
+}
+.header .topNavPanel .topNav li{
+	float: left;
+	border: 1px solid red;
+}
+.header .topNavPanel .topNav li>a{
+	display: block;
+	padding: 0 15px;
+	border: 1px solid green;
+}
+.mobile_tour>a em,.wechat_tour>a em{
+	background: url(../../img/index/tour@insprit.png) no-repeat;
+}
+.header .topNavPanel .topNav .mobile_tour>a em{
+	width: 14px;
+	height: 19px;
+	display: inline-block;
+	background-position: -5px -40px;
+  	margin-top: 5px;	
+	
+}
+.header .topNavPanel .topNav .wechat_tour>a em{
+	width: 20px;
+	height: 18px;
+	display: inline-block;
+	background-position: -4px -80px;
+	margin-top: 8px;
+}
