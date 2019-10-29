@@ -83,6 +83,7 @@
 }
 .tobar .fr ul li{
 	float: left;
+	margin-right: 0;
 }
 .tobar .fr ul li a{
 	font-size: 16px;
