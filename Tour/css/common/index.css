@@ -1,59 +1,197 @@
 .header{
 	min-width: 1190px;
-}
-.header{
 	background: #fff;
+}
+.header .topNavWrapper{}
+.header .topNavWrapper .topNavPanel{
+	width: 1190px;
+	height: 29px;
+	line-height: 29px;	
+	margin: 0 auto;
 	border: 1px solid red;
 }
+.header .topNavWrapper .topNavPanel a{
+	color: #999;
+}
+.header .topNavWrapper .topNavPanel .topLogin{
+	width: 600px;
+	float: left;
+}
+.header .topNavWrapper .topNavPanel .topLogin>span,
+.header .topNavWrapper .topNavPanel .topLogin>a{
+	float: left;
+	color: #999;
+}
+.header .topNavWrapper .topNavPanel .topLogin .register{
+ padding: 0 6px 0 10px;
+}
+.header .topNavWrapper .topNavPanel .topNav{
+	float: right;
+}
+.header .topNavWrapper .topNavPanel .topNav li{
+	float: left;
+}
+/*.header{
+	min-width: 1190px;
+	background: #fff;
+}
 .header .topNavWrapper{
+	min-width: 1190px;
 	background: #fafafa;
 	border-bottom: 1px solid #eee;
+	z-index: 9999;
 }
-.header .topNavPanel{
+.header .topNavWrapper .topNavPanel{
 	width: 1190px;
 	height: 28px;
 	line-height: 28px;
 	margin: 0 auto;
-	
 }
-.header .topNavPanel a{
+.header .topNavWrapper .topNavPanel a{
 	color: #999;
 }
-.header .topNavPanel .topLogin{
+.header .topNavWrapper .topNavPanel p a{
+	color: #00a0ff;
+}
+.header .topNavWrapper .topNavPanel .topLogin{
 	width: 600px;
 	height: 29px;
 	float: left;
-}
-.header .topNavPanel .topLogin>span{
-	color: #999;
-}
-.header .topNavPanel .topNav{
-	float: right;
-}
-.header .topNavPanel .topNav li{
-	float: left;
-	border: 1px solid red;
-}
-.header .topNavPanel .topNav li>a{
-	display: block;
-	padding: 0 15px;
-	border: 1px solid green;
-}
-.mobile_tour>a em,.wechat_tour>a em{
-	background: url(../../img/index/tour@insprit.png) no-repeat;
-}
-.header .topNavPanel .topNav .mobile_tour>a em{
-	width: 14px;
-	height: 19px;
-	display: inline-block;
-	background-position: -5px -40px;
-  	margin-top: 5px;	
+	overflow: hidden;
 	
 }
-.header .topNavPanel .topNav .wechat_tour>a em{
-	width: 20px;
-	height: 18px;
-	display: inline-block;
-	background-position: -4px -80px;
-	margin-top: 8px;
+.header .topNavWrapper .topNavPanel .topLogin>span,
+.header .topNavWrapper .topNavPanel .topLogin a{
+	color: #999;
+	float: left;
 }
+
+.header .topNavWrapper .topNavPanel .topLogin .register{
+	padding: 0 6px 0 10px;
+}
+.header .topNavWrapper .topNavPanel .topLogin .pc_index_register{
+	float: left;
+	height: 26px;
+	padding-top: 3px;
+}
+.header .topNavWrapper .topNavPanel .topNav{
+	float: right;
+}
+.header .topNavWrapper .topNavPanel .topNav li{
+	float: left;
+	position: relative;	
+	/*border-style: solid;
+	border-width: 0 1px;
+	border-color: transparent;*/
+
+/*}
+.header .topNavWrapper .topNavPanel .topNav li>a{
+	display: block;
+	padding: 0 15px;
+	height: 28px;
+	z-index: 2;
+}
+.header .topNavWrapper .topNavPanel .topNav li>a i{
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	overflow: hidden;	
+	vertical-align: middle;
+	margin: -3px 0 0 4px;
+	background: url(../../img/index/tour@insprit.png) no-repeat;	
+	background-position: -5px -21px;
+}
+
+.header .topNavWrapper .topNavPanel .topNav li .second-menu{
+	width: 145px;
+	position: absolute;
+	left: 0;
+	top: 28px;
+	z-index: 1;
+	transition: 0.2s height ease-in-out; 
+	display: none;
+	
+}
+.header .topNavWrapper .topNavPanel .topNav .topNavLanguage .second-menu a{
+	display: block;
+	width: 145px;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 15px;
+	text-align: left;
+	color: #666;
+	margin-top: 5px;
+}
+.header .topNavWrapper .topNavPanel .topNav li .second-menu a img{
+	vertical-align: middle;
+	margin-bottom: 1px;
+	margin-right: 5px;
+}
+
+.header .topNavWrapper .topNavPanel .topNav li.open{
+	background: #fff;
+}
+.header .topNavWrapper .topNavPanel .topNav li.open>a{
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 0 16px 0 #ccc;
+	background: #fff;
+}
+.header .topNavWrapper .topNavPanel .topNav li.open .second-menu{
+	height: 65px;
+	width: 145px;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+	border: 1px solid #ddd;
+	
+	
+}
+.header .topNavWrapper .topNavPanel .topNav .topNavMyTour>div{
+	width: 132px;
+	padding: 0 15px;
+	border: 1px solid black;
+}
+.header .topNavWrapper .topNavPanel .topNav .topNavMyTour .use-box{
+	padding: 15px 0 8px 0;
+	border: 1px solid green;
+}
+
+.header .topNavWrapper .topNavPanel .topNav .topNavMyTour .use-box .member-pic{
+	float: left;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	background: url(../../img/index/BfCGPi.png) no-repeat 0 -175px;
+	background-position: 0 -248px;
+}
+.header .topNavWrapper .topNavPanel .topNav .topNavMyTour .mylist span{
+	float: left;
+	width: 48px;
+	
+}
+.header .topNavWrapper .topNavPanel .topNav .topNavMyTour .mylist span:first-child{
+	float: left;
+	width: 48px;
+	
+}
+.header .topNavWrapper .topNavPanel .topNav .mobile_tour>a em{
+	display: inline-block;
+	width: 14px;
+	height: 19px;
+	background: url(../../img/index/tour@insprit.png) no-repeat;	
+	background-position: -5px -40px;
+	margin-top: 5px;
+	
+}
+.header .topNavWrapper .topNavPanel .topNav .wechat_tour>a em{
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url(../../img/index/tour@insprit.png) no-repeat;
+    background-position: -4px -80px;
+    margin-top: 8px;
+}
+
+
+
+
+
+*/

@@ -1,1 +1,1 @@
-1.topLogin>span:
+1.浮动的元素设置了height和line-height居中,

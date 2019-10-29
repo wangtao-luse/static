@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/**:root 选择器选取文档的根元素。
+			 * 在 HTML 中，根元素总是 <html> 元素。
+			 */
+			:root{
+				background: pink;
+			}
+			.box{
+				width: 800px;
+				height: 500px;
+				background: white;
+				font-size: 18px;
+ 				color: purple;
+				
+			}
+			/**
+			 * 优先级别比较高
+			 * */
+			:root .box{
+				color: red;
+				font-size: 28px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">我是box</div>
+		
+	</body>
+</html>

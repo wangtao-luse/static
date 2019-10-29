@@ -1,11 +1,20 @@
-body{
-	color: #333;
-	font: normal normal normal 12px/20px Microsoft YaHei',Arial,sans-serif;
-}
 *{
 	padding: 0;
 	margin: 0;
 }
-ul{padding: 0;margin: 0;}
+body{
+	color: #333;
+	font: normal normal normal 12px/20px Microsoft YaHei,Arial,sans-serif;
+}
+body,ul{padding: 0;margin: 0;}
 li{list-style: none;}
+img{border: 0;}
 a{text-decoration: none;}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	clear: both;
+	visibility: hidden;
+}

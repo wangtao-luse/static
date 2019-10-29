@@ -5,6 +5,8 @@
 		<title></title>
 		<link rel="stylesheet" href="css/common/base.css" />
 		<link rel="stylesheet" href="css/common/index.css" />
+		<!--<script src="js/comon/jquery-3.4.1.js.js"></script>
+		<script src="js/index.js"></script>-->
 	</head>
 	<style>
 	
@@ -12,30 +14,75 @@
 	<body>
 		
 		<div class="header">
-			<div class="commomhead">
-				<div class="topNavWrapper">
-					<div class="topNavPanel">
-						<div class="topLogin">
-							<span>您好,请</span>
-							<a class="login" href="#">登录</a>
-							<a class="register" href="#">注册</a>
-							<a class="pc_index_register" href="#">
-								<img src="img/index/pc_index_gister.gif" />
-							</a>
-						</div>
-						<ul class="topNav">
-							<li class="topNavLanguage"><a href="#">Language<i></i></a></li>
-							<li class="topNavMyOrder"><a href="#">我的订单</a></li>
-							<li class="topNavMyTour"><a href="#">我的同程<i></i></a></li>
-							<li class="consumerService"><a href="#">客户服务<i></i></a></li>
-							<li class="topjoinTeam"><a href="#">合作中心<i></i></a></li>
-							<li class="mobile_tour"><a href="#"><em></em></a></li>
-							<li class="wechat_tour"><a href="#"><em></em></a></li>
-							
-						</ul>
+			<div class="topNavWrapper">
+				<div class="topNavPanel">
+					<div class="topLogin">
+						<span>您好,请</span>
+						<a class="login" href="#">登录</a>
+						<a class="register" href="#">注册</a>
+						<a class="pc_index_register" href="#">
+							<img src="img/index/pc_index_gister.gif" />
+						</a>
 					</div>
+					<ul class="topNav">
+						<li class="topNavLanguage">
+							<a href="#">Language<i></i></a>
+							<div style="display: none;">
+								<a href="#"><img src="img/index/language-en.png"><span>English</span></a>									
+								<a href="#"><img src="img/index/language-zh.png"><span>繁體中文（台灣）</span></a>
+							</div>
+						</li>
+						<li class="topNavMyOrder"><a href="#">我的订单</a></li>
+						<li class="topNavMyTour">
+							<a href="#">我的同程<i></i></a>
+							<div style="display: none;">
+								<div class="use-box">
+									<div class="member-pic member-no"></div>
+									<p>你好,<a href="#">请登录</a></p>
+								</div>
+								<div class="my-list">
+									<span>
+										<a href="#">我的订单</a>
+										<a href="#">我的收藏</a>	
+									</span>
+									<span>
+										<a href="#">我的信息</a>
+										<a href="#">会员中心</a>	
+									</span>
+								</div>
+							</div>
+						</li>
+						<li class="consumerService">
+							<a href="#">客户服务<i></i></a>
+							<div style="display: none;">
+								<a href="#">帮助中心</a>
+								<a href="#">在线客服</a>
+								<a href="#">人工申诉</a>
+								<a href="#">包团定制</a>
+							</div>
+						</li>
+						<li class="topjoinTeam">
+							<a href="#">合作中心<i></i></a>
+							<div style="display: none;">
+								<a href="#">门店加盟</a>
+								<a href="#">品牌合作</a>
+								<a href="#">合作加盟</a>
+								<a href="#">门票合作</a>
+								<a href="#">商旅合作</a>
+							</div>
+						</li>
+						<li class="mobile_tour">
+							<a href="#"><em></em></a>
+							<div style="display: none;">
+								<a href="#">
+									<img src="img/index/tour-app.png" />
+								</a>
+							</div>
+						</li>
+						<li class="wechat_tour"><a href="#"><em></em></a></li>
+					</ul>
 				</div>
-			</div>
+			</div>			
 		</div>
 		<div class="csliderMain"></div>
 		<div class="tour-content"></div>
