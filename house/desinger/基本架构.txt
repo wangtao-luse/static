@@ -1,0 +1,9 @@
+1.租房网
+  1.框架
+   使用传统的SSM（SpringMVc+Spring+Mybatis+Hessian）
+  2.数据库
+    oracle
+  3.Jquery|JavaScript|
+  4.模板引擎：beetl
+  5.页面使用html
+  

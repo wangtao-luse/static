@@ -1,0 +1,262 @@
+1.margin padding display font position float
+1.1background:   https://www.xp.cn/css3/
+    background-attachment:背景图片附着位置的方式
+    	scroll:默认值；背景图片会随着页面其于部分的滚动而滚动；相对于html元素（容器本身）
+        fixed ：背景图片位置固定,不会随着页面的其余对象的滚动而滚动;（相对于浏览器窗口）
+	    local: 背景图片的会随着页面其余部分的滚动而滚动；（相对于内容（容器里面的内容））
+    background-position:x y
+    	1.默认值 0% 0% 效果等同于 left top;
+    	2.可以是百分比（percentage）或长度(length),都可以为负值;
+    	3.值
+    	left：背景图像在横向上填充从左边开始。
+		center①：    背景图像在横向上填充从中间开始。
+		right：   背景图像在横向上填充从右边开始。
+		top：    背景图像在纵向上填充从顶部开始。
+		center②：    背景图像在纵向上填充从中间开始。
+		bottom：    背景图像在纵向上填充从底部开始。
+	background-size: [bg-size][bg-size]
+	1.默认值：auto
+	2.用长度值指定背景图像大小。不允许负值。
+	3.<percentage>：用百分比指定背景图像大小。不允许负值。
+	4.auto：    背景图像的真实大小。
+	5.cover：    将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器。
+	6.contain：    将背景图像等比缩放到宽度或高度与容器的宽度或高度相等，背景图像始终被包含在容器内。
+	注意：
+	1.检索或设置对象的背景图像的尺寸大小。
+    2.该属性提供2个参数值(特性值cover和contain除外)。
+    3.如果提供两个，第一个用于定义背景图像的宽度，第二个用于定义背景图像的高度。
+    4.如果只提供一个，该值将用于定义背景图像的宽度，第2个值默认为auto，即高度为auto，
+            此时背景图以提供的宽度作为参照来进行等比缩放。
+		
+		
+2.居中
+  a.元素的居中（只对块状元素有效）
+	 1.为元素设置宽度
+	 2.设置margin
+	 .tobar{
+	 	width:980px;
+	 	margin:0 auto;
+	 }
+  b.文本在元素中居中
+     1.设置元素的高度和行高为相同的值;
+     p{height:20px;line-height:20px}
+
+
+
+3.设置元素的垂直对齐方式:  https://www.xp.cn/css3/
+	 vertical-align: middle;
+	 baseline:默认值,将支持valign特性的对象的内容与基线对齐;
+	 middle:将支持valign特性的对象的内容与对象中部对齐;
+	 bottom:将支持valign特性的对象的文本与对象底端对齐;
+	 top:将支持valign特性的对象的内容与对象顶端对齐;
+3.1设置或检索对象中内容的水平对齐方式：
+	text-align:start;
+	1.start：默认值，内容对齐开始边界;
+	2.left：内容左对齐。
+    3.center:内容居中对齐。
+	4.right： 内容右对齐。
+	
+4.opacity:颜色不透明度   https://www.w3school.com.cn/cssref/pr_opacity.asp
+	 规定不透明度。从 0.0 （完全透明）到 1.0（完全不透明）。	
+	opacity: 0.8;
+	1.默认值1;//https://www.xp.cn/css3/
+	
+3.overflow:规定当内容溢出元素框时,内容会被修剪，并且其余内容是不可见的。
+	overflow: hidden;
+	1.默认值：visible不剪切内容;
+	2.hidden:将超出对象尺寸的内容进行裁剪，将不出现滚动条;
+	3.scroll:将超出对象尺寸的内容进行裁剪，并以滚动条的方式显示超出的内容;
+	4.auto:在需要时剪切内容并添加滚动条，此为body对象和textarea的默认值;
+4.设置或检索对象内空格的处理方式。
+	white-space: nowrap//规定段落中的文本不进行换行
+	1.normal:默认值, 默认处理方式。
+	2.nowrap:强制在同一行内显示所有文本，直到文本结束或者遭遇br对象；
+	
+5.text-overflow:置或检索是否使用一个省略标记（...）标示对象内文本的溢出。
+    text-overflow:ellipsis; //规定当文本溢出包含元素时,显示省略符号来代表被修剪的文本。
+    1.clip:当对象内文本溢出时不显示省略标记（...），而是将溢出的部分裁切掉。
+    2.ellipsis:当对象内文本溢出时显示省略标记（...）;
+    
+	
+6.letter-spacing:增加检索或设置对象中的文字之间的间隔。 该属性将指定的间隔添加到每个文字(包括单词内的每个字母)之后。
+  letter-spacing:0(lenght);
+  1.normal:默认值;
+  2.length:可以为负数
+7.font-size:设置或检索对象中的字体尺寸;
+  1.medium：默认值;
+  2.absolute-size:根据对象字体进行调节。
+                                  可选参数值：xx-small | x-small | small | medium | large | x-large | xx-large 
+  3.relative-size:相对于父对像中字体尺寸进行相对调节。
+                                    使用成比例的em单位计算。可选参数值：smaller | larger
+  4.length:用长度值指定文字大小。不允许负值;
+  5.percentage:用百分比指定文字大小。其百分比取值是基于父对象中字体的尺寸。不允许负值。
+  
+  6.font-size:0
+       为了页面代码的整洁可读性，往往会设置一些适当的缩进、换行，
+       但当元素的display为inline或者inline-block的时候，这些缩进、换行就会产生空白；
+     解决方案:在元素的父级元素设置font-size:0;
+  7.font-size:100%;
+     设置字体属性为默认大小，是相对于浏览器默认字体大小或继承body设定的字体大小来说的。
+8.font:复合属性;
+ 	font-style font-variant font-weight font-size/line-height font-fmaily
+        其中font-size和font-family的值是必须的;可忽略的将使用参数对应属性的默认值;
+    https://blog.csdn.net/qq_29393273/article/details/84572511
+9.visibility:设置或检索是否显示对象。与display属性不同，此属性为隐藏的对象保留其占据的物理空间,
+    如果希望对象为可视，其父对象也必须是可视的。
+	visibility：visible | hidden | collapse
+      1.visible：默认值，设置对象可视
+      2.hidden： 设置对象隐藏
+      3.collapse:主要用来隐藏表格的行或列。隐藏的行或列能够被其他内容使用。
+      			 对于表格外的其他对象，其作用等同于hidden。IE6及以下不支持此参数值；
+10.display:设置或检索对象是否及如何显示。
+    常用值:
+  1.none:隐藏对象。与visibility属性的hidden值不同，其不为被隐藏的对象保留其物理空间；
+  2.inline：    指定对象为内联元素。
+  3.block：    指定对象为块元素。
+  4.inline-block：    指定对象为内联块元素。
+11.box-shadow:置或检索对象阴影,可以设定多组效果，每组参数值以逗号分隔;
+	box-shadow: 0 1px 0 0 #e4e6f0; 
+	box-shadow:inset? length length length length color;
+	none:无阴影(默认值)
+	<length>①：
+	    第1个长度值用来设置对象的阴影水平偏移值。可以为负值
+	<length>②：
+	    第2个长度值用来设置对象的阴影垂直偏移值。可以为负值
+	<length>③：
+	    如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值
+	<length>④：
+	    如果提供了第4个长度值则用来设置对象的阴影外延值。不允许负值
+	<color>：
+	    设置对象的阴影的颜色。
+	inset：
+	    设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影
+12.text-shadow:设置或检索对象中文本的文字是否有阴影及模糊效果,可以设定多组效果，每组参数值以逗号分隔 
+	 none:无阴影(默认值)
+	<length>①：
+	    第1个长度值用来设置对象的阴影水平偏移值。可以为负值
+	<length>②：
+	    第2个长度值用来设置对象的阴影垂直偏移值。可以为负值
+	<length>③：
+	    如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值
+	<color>：
+	    设置对象的阴影的颜色。
+13.*box-sizing:设置或检索对象的盒模型组成模式。
+	box-sizing：content-box | border-box
+	1.默认值：content-box
+			padding和border不被包含在定义的width和height之内。
+			对象的实际宽度等于设置的width值和border、padding之和，
+			即 ( Element width = width + border + padding )
+			此属性表现为标准模式下的盒模型。
+	2.border-box：
+	    padding和border被包含在定义的width和height之内。
+	      对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，
+	       即 ( Element width = width )此属性表现为怪异模式下的盒模型。
+14.outline:复合属性。设置或检索对象外的线条轮廓。outline画在border外面    
+       不允许类似border属性那样能将自身拆分为border-top,border-right,border-bottom,border-left
+    IE8暂时还不支持outline-offset相关属性
+    1.在做网站搜索框的时候可能会用到;outline:none;
+    2.取值：
+		outline：[ outline-width ] || [ outline-style ] || [ outline-color ]
+		默认值：看每个独立属性
+		相关属性: [ outline-offset ]
+		取值：
+		    [ outline-width ]：   指定轮廓边框的宽度。
+		    [ outline-style ]：   指定轮廓边框的样式。
+		    [ outline-color ]：   指定轮廓边框的颜色。
+
+15.position:检索对象的定位方式。
+	https://blog.csdn.net/qq_29393273/article/details/86409042
+	position：static | relative | absolute | fixed
+	默认值：static
+	取值：
+	static：
+	    无特殊定位，对象遵循正常文档流。top，right，bottom，left等属性不会被应用。
+	relative：
+	    对象遵循正常文档流，但将依据top，right，bottom，left等属性在正常文档流中偏移位置。
+	absolute：
+	    对象脱离正常文档流，使用top，right，bottom，left等属性进行绝对定位。而其层叠通过z-index属性定义。
+	fixed：
+	    对象脱离正常文档流，使用top，right，bottom，left等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。
+	  IE6及以下不支持此参数值
+
+
+16.border-radius:设置或检索对象使用圆角边框;
+	border-radius: 2px;
+	语法：
+	border-radius：[ <length> | <percentage> ]{1,4} [ / [ <length> | <percentage> ]{1,4} ]?
+	默认值：0
+	取值：
+	<length>：
+	    用长度值设置对象的圆角半径长度。不允许负值
+	<percentage>：
+	    用百分比设置对象的圆角半径长度。不允许负值
+	
+	说明：
+	设置或检索对象使用圆角边框。提供2个参数，2个参数以“/”分隔，每个参数允许设置1~4个参数值，第1个参数表示水平半径，第2个参数表示垂直半径，
+	 如第2个参数省略，则默认等于第1个参数;
+	    水平半径：如果提供全部四个参数值，将按上左(top-left)、上右(top-right)、下右(bottom-right)、下左(bottom-left)的顺序作用于四个角。
+	    如果只提供一个，将用于全部的于四个角。
+	    如果提供两个，第一个用于上左(top-left)、下右(bottom-right)，第二个用于上右(top-right)、下左(bottom-left)。
+	    如果提供三个，第一个用于上左(top-left)，第二个用于上右(top-right)、下左(bottom-left)，第三个用于下右(bottom-right)。
+	    垂直半径也遵循以上4点。
+17.border：边框
+	语法：
+	border：[ border-width ] || [ border-style ] || [ border-color ]
+	默认值：看每个独立属性
+	相关属性：[ border-top ] || [ border-right ] || [ border-bottom ] || [ border-left ]
+	取值：
+	[ border-width ]：
+	    设置或检索对象边框宽度。
+	[ border-style ]：
+	    设置或检索对象边框样式。
+	[ border-color ]：
+	    设置或检索对象边框颜色。
+	
+	说明：
+	复合属性。设置对象边框的特性。
+	 如使用该复合属性定义其单个参数，则其他参数的默认值将无条件覆盖各自对应的单个属性设置。
+18.cursor:设置或检索在对象上移动的鼠标指针采用何种系统预定义的光标形状。
+	    使用自定义图像作为光标类型，IE, Opera只支持*.cur等特定的图片格式；
+	  Firefox, Chrome, Safari既支持特定图片类型也支持常见的*.jpg, *.gif, *.jpg等图片格式。
+	   默认值：auto;
+	  常用值：pointer;
+19:text-decoration: 检索或设置对象中的文本的装饰。
+      默认值：none
+	取值：
+	none：    指定文字无装饰
+	underline：    指定文字的装饰是下划线
+	overline：    指定文字的装饰是上划线
+	line-through：    指定文字的装饰是贯穿线
+	blink：    指定文字的装饰是闪烁。写本文档时仅Firefox和Opera支持该参数值
+19.1 text-indent:检索或设置对象中的文本的缩进。
+语法：
+	text-indent：<length> | <percentage>
+	默认值：0
+	取值：
+	<length>：    用长度值指定文本的缩进。可以为负值。
+	<percentage>：    用百分比指定文本的缩进。可以为负值。
+	说明：
+	    内联对象要使用该属性必须先使该对象表现为块级或内联块级。
+20.line-height
+     line-height:1 //根据该元素本身的字体大小 设置行高
+	语法：
+	line-height：normal | <length> | <percentage> | <number>
+	默认值：normal
+	取值：
+	normal：    允许内容顶开或溢出指定的容器边界。
+	<length>：    用长度值指定行高。可以为负值。
+	<percentage>：    用百分比指定行高，其百分比取值是基于字体的高度尺寸。可以为负值。
+	<number>：    用乘积因子指定行高。可以为负值。
+	说明：
+	检索或设置对象的行高。即字体最底端与字体内部顶端之间的距离。
+21.transform:设置或检索对象的转换。
+transform: translate(-50%, -50%);
+22.transition:
+23.选择器
+1.伪类选择器https://www.w3school.com.cn/cssref/selector_nth-of-type.asp
+ul li:nth-of-type(3n+1){}
+ul li a:hover{}
+li:first-of-type{}
+2.伪类对象选择器（content属性必须）
+clearfix:after{}
+i.before{}

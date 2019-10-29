@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{border: 10px solid red;}
+			#boxa{width: 30%; height: 40px;float: left; background: #ADFF2F;}
+			#boxb{width: 70%; height: 40px;float: left;background: #00FFFF;}
+	.clearfix{zoom:1}/*IE浏览器的专用属性（针对IE*/）
+    .clearfix:after{
+       content:".";
+       display:block;
+       visibility:hidden;
+       height:0;
+       clear:both;
+     }
+     /*.clear{
+     	clear: both;
+     }
+    */
+  /* .clearfix:after{
+   	content: ".";
+   	display: block;
+   	visibility: hidden;
+   	height: 0;
+   	clear: both;
+   }*/
+		</style>
+			
+	</head>
+	<body>
+		<div id="box" class="clearfix">
+			<div id="boxa"></div>
+			<div id="boxb"></div>
+			<!--<div class="clear"></div>
+			-->
+		</div>
+	</body>
+</html>
