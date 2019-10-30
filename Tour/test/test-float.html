@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.wrapper{
+				border: 3px solid red;
+				float: left;
+			}
+			.left{
+				background: pink;
+				float: left;
+				width: 400px;
+			}
+			.right{
+				background: greenyellow;
+				float: left;
+				width: 400px;
+			}
+			/*.clear{
+				clear: both;
+			}*/
+			
+			/**
+			 * 1.在父元素未设置高度的时候,默认高度会被子元素撑开,当其所有子节点都浮动的时候，就会脱离文档流，此时父元素的高度就会丢失;
+			 * 2.解决方案:
+			 *  a.添加一个空的DIV标签，并设置如下CSS:.clear{clear：both}
+			 *    缺点:增加了无意义的标签。
+			 *  b.让父元素本身也浮动:
+			 * 		虽然可以撑开父元素，但会使父元素宽度丢失，而且导致下面的元素会上移，使与父元素相邻元素的布局受到影响;
+			 *  c.使用伪类
+			 * */
+			.clear:after{
+				content: ".";
+				display: block;
+				visibility: hidden;
+				height: 0;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="left">left</div>
+			<div class="right">right</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>
