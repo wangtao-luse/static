@@ -1,6 +1,6 @@
 .header{
 	min-width: 1190px;
-	background: #fff;
+	background: #fff;	
 }
 .header .topNavWrapper{
 	background: #fafafa;
@@ -10,7 +10,6 @@
 	height: 29px;
 	line-height: 29px;	
 	margin: 0 auto;
-	border: 1px solid red;
 }
 .header .topNavWrapper .topNavPanel a{
 	color: #999;
@@ -50,33 +49,31 @@
 	
 }
 
-.header .topNavWrapper .headerWrapper{
+.header .headerWrapper{
 	min-width: 1190px;	
 }
-.header .topNavWrapper .headerWrapper .pageheader{
+.header .headerWrapper .pageheader{
 	width: 1190px;
 	margin: 0 auto;
-	border: 4px solid black;
+	clear: both;
 }
-.header .topNavWrapper .headerWrapper .pageheader .logo-style{
+.header .headerWrapper .pageheader .logo-style{
 	float: left;
-	border: 4px solid blue;	
 }
-.header .topNavWrapper .headerWrapper .pageheader .logo-style .logo{
+.header .headerWrapper .pageheader .logo-style .logo{
 	float: left;
-    border: 1px solid green;	
 }
-.header .topNavWrapper .headerWrapper .pageheader .logo-style .logo a{
+.header .headerWrapper .pageheader .logo-style .logo a{
 	display: block;
 	text-align: center;
 	height: 100%;
 }
-.header .topNavWrapper .headerWrapper .pageheader .logo-style .nowCity{
+.header .headerWrapper .pageheader .logo-style .nowCity{
 	float: left;
 	line-height: 38px;
 	margin-top: 25px;
 }
-.header .topNavWrapper .headerWrapper .pageheader .logo-style .nowCity>a{
+.header .headerWrapper .pageheader .logo-style .nowCity>a{
 	color: #666;
 	font-size: 18px;
 	display: block;
@@ -84,13 +81,100 @@
 	text-align: center;
 	margin-left: 10px;
 }
-.header .topNavWrapper .headerWrapper .pageheader .logo-style .nowCity>a span{
+.header .headerWrapper .pageheader .logo-style .nowCity>a span{
 	height: 40px;
 	line-height: 40px;
 }
-.header .topNavWrapper .headerWrapper .pageheader .s_box_outer{
-	border: 2px solid purple;
+.header .headerWrapper .pageheader .logo-style .nowCity>a i{
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	background: url(../../img/index/tour@insprit2.png) no-repeat;
+	background-position: -5px -115px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.header .headerWrapper .pageheader .s_box_outer{
+	float: right;
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box{
+display: block;
+margin-right: 46px;	
+padding-top: 25px;
+float: left;
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box>div:first-child{
+	width: 556px;
+	padding: 2px;
+	background-color: #00c07b;
+	background-image: linear-gradient(to right,#00bf63,#01c192);
+	border-radius: 2px;
+	position: relative;
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box input{
+	width: 459px;
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+	font-size: 14px;
+	text-indent: 10px;
+	border: none;
+	background: #fff;
+	float: left;
+	
+	
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box input.autofill_empty{
+	color: #ccc;
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box .pt_search_btn{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+	cursor: pointer;
+	background-color: #00c07b;
+	background-image: linear-gradient(to right,#00bf63,#01c192);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box .pt_clear_float{
 	clear: both;
+	height: 0;
+	width: 0;
+	line-height: 1;
+	overflow: hidden;
+
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box .pt_search_hotlist{
+	height: 22px;
+	position: absolute;
+	top: 9px;
+	right: 100px;
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box .pt_search_hotlist .spenl{
+	max-width: 400px;
+}
+.header .headerWrapper .pageheader .s_box_outer .pt-serach-box .pt_search_hotlist .spenl a{
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	color: #999;
+	background: #f0f0f0;
+	padding: 0 10px;
+	border-radius: 12px;
+	margin-right: 5px;	
+}
+.header .headerWrapper .pageheader .s_box_outer .portal-block-box{
+	float: left;
+}
+.header .headerWrapper .pageheader .s_box_outer .portal-block-box .rightpic1{
+	margin-left: 5px;
 }
 /*.header{
 	min-width: 1190px;

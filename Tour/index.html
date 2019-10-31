@@ -14,76 +14,78 @@
 	<body>
 		
 		<div class="header">
-			<div class="topNavWrapper">
-				<div class="topNavPanel">
-					<div class="topLogin">
-						<span>您好,请</span>
-						<a class="login" href="#">登录</a>
-						<a class="register" href="#">注册</a>
-						<a class="pc_index_register" href="#">
-							<img src="img/index/pc_index_gister.gif" />
-						</a>
-					</div>
-					<ul class="topNav">
-						<li class="topNavLanguage">
-							<a href="#">Language<i></i></a>
-							<div style="display: none;">
-								<a href="#"><img src="img/index/language-en.png"><span>English</span></a>									
-								<a href="#"><img src="img/index/language-zh.png"><span>繁體中文（台灣）</span></a>
-							</div>
-						</li>
-						<li class="topNavMyOrder"><a href="#">我的订单</a></li>
-						<li class="topNavMyTour">
-							<a href="#">我的同程<i></i></a>
-							<div style="display: none;">
-								<div class="use-box">
-									<div class="member-pic member-no"></div>
-									<p>你好,<a href="#">请登录</a></p>
+			<div class="commonhead">
+				<div class="topNavWrapper">
+					<div class="topNavPanel">
+						<div class="topLogin">
+							<span>您好,请</span>
+							<a class="login" href="#">登录</a>
+							<a class="register" href="#">注册</a>
+							<a class="pc_index_register" href="#">
+								<img src="img/index/pc_index_gister.gif" />
+							</a>
+						</div>
+						<ul class="topNav">
+							<li class="topNavLanguage">
+								<a href="#">Language<i></i></a>
+								<div style="display: none;">
+									<a href="#"><img src="img/index/language-en.png"><span>English</span></a>									
+									<a href="#"><img src="img/index/language-zh.png"><span>繁體中文（台灣）</span></a>
 								</div>
-								<div class="my-list">
-									<span>
-										<a href="#">我的订单</a>
-										<a href="#">我的收藏</a>	
-									</span>
-									<span>
-										<a href="#">我的信息</a>
-										<a href="#">会员中心</a>	
-									</span>
+							</li>
+							<li class="topNavMyOrder"><a href="#">我的订单</a></li>
+							<li class="topNavMyTour">
+								<a href="#">我的同程<i></i></a>
+								<div style="display: none;">
+									<div class="use-box">
+										<div class="member-pic member-no"></div>
+										<p>你好,<a href="#">请登录</a></p>
+									</div>
+									<div class="my-list">
+										<span>
+											<a href="#">我的订单</a>
+											<a href="#">我的收藏</a>	
+										</span>
+										<span>
+											<a href="#">我的信息</a>
+											<a href="#">会员中心</a>	
+										</span>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li class="consumerService">
-							<a href="#">客户服务<i></i></a>
-							<div style="display: none;">
-								<a href="#">帮助中心</a>
-								<a href="#">在线客服</a>
-								<a href="#">人工申诉</a>
-								<a href="#">包团定制</a>
-							</div>
-						</li>
-						<li class="topjoinTeam">
-							<a href="#">合作中心<i></i></a>
-							<div style="display: none;">
-								<a href="#">门店加盟</a>
-								<a href="#">品牌合作</a>
-								<a href="#">合作加盟</a>
-								<a href="#">门票合作</a>
-								<a href="#">商旅合作</a>
-							</div>
-						</li>
-						<li class="mobile_tour">
-							<a href="#"><em></em></a>
-							<div style="display: none;">
-								<a href="#">
-									<img src="img/index/tour-app.png" />
-								</a>
-							</div>
-						</li>
-						<li class="wechat_tour"><a href="#"><em></em></a></li>
-					</ul>
+							</li>
+							<li class="consumerService">
+								<a href="#">客户服务<i></i></a>
+								<div style="display: none;">
+									<a href="#">帮助中心</a>
+									<a href="#">在线客服</a>
+									<a href="#">人工申诉</a>
+									<a href="#">包团定制</a>
+								</div>
+							</li>
+							<li class="topjoinTeam">
+								<a href="#">合作中心<i></i></a>
+								<div style="display: none;">
+									<a href="#">门店加盟</a>
+									<a href="#">品牌合作</a>
+									<a href="#">合作加盟</a>
+									<a href="#">门票合作</a>
+									<a href="#">商旅合作</a>
+								</div>
+							</li>
+							<li class="mobile_tour">
+								<a href="#"><em></em></a>
+								<div style="display: none;">
+									<a href="#">
+										<img src="img/index/tour-app.png" />
+									</a>
+								</div>
+							</li>
+							<li class="wechat_tour"><a href="#"><em></em></a></li>
+						</ul>
+					</div>				
 				</div>
 				<div class="headerWrapper">
-					<div class="pageheader">
+					<div class="pageheader clearfix">
 						<div class="logo-style">
 							<div class="logo">
 								<a href="#"><img src="img/index/tour-logo.png"/></a>
@@ -624,9 +626,9 @@
 						<div class="s_box_outer">
 							<form class="pt-serach-box">
 								<div class="serachWrapper">
-									<input id="pt__search_text" type="text" value="请输入目的地/景点/酒店等" attr-placeholder="请输入目的地/景点/酒店等" autocomplete="off" att-url="#" class="autofill_empty">
-									<button id="pt__search_btn" class="pt__search_btn" type="submit">搜  索</button>
-									<div class="pt__clear_float"></div>
+									<input id="pt_search_text" type="text" value="请输入目的地/景点/酒店等" attr-placeholder="请输入目的地/景点/酒店等" autocomplete="off" att-url="#" class="autofill_empty">
+									<button id="pt_search_btn" class="pt_search_btn" type="submit">搜  索</button>
+									<div class="pt_clear_float"></div>
 									<div class="pt__searchpop" style="display: none;">
 				                        <div class="pt__search_history none">
 				                            <div class="pt__history_tit">
@@ -690,7 +692,7 @@
 				                        	</dl>
 				                        </div>
                     </div>
-									<div class="pt__search_hotlist">                    
+									<div class="pt_search_hotlist">                    
 				                        <div class="spenl">
 				                        	<a  href="#" target="_blank" title="上海" onclick="">上海</a>
 				                        	<a  href="#" target="_blank" title="北京" onclick="">北京</a>
@@ -698,7 +700,7 @@
 				                        <i class="clearfix"></i>
 				                    </div>
 								</div>
-								<div class="pt__clear_float"></div>
+								<div class="pt_clear_float"></div>
 							</form>
 							<div class="portal-block-box">
 								<div class="udiyblock">
@@ -715,7 +717,162 @@
 						</div>
 					</div>
 				</div>
-			</div>			
+			    <div class="menuNavOuter">
+			    	<div class="menuNavWrapper">
+			    		<div class="menuNavPanel">
+			    			<ul id="menuNav">
+				                <li class="current" date-type="2000">
+				                    <a href="/"><b>首页</b></a>
+				                </li>
+				                <li date-type="2001" class="">
+				<!--                     <p><em class="hp-flash" data-arr="全家游, 暑期游, 抢特价"><i>全家游</i></em></p> -->
+				                    <a href="/hotel/"><b>酒店</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav "><span>
+				                            <a class="hotel-submenu1" href="/hotel/">国内酒店</a>
+				                            <a date-type="2024" href="http://ghotel.ly.com/">海外酒店</a>
+				                            <a href="https://zby.ly.com/" onclick="_tcTraObj._tcTrackEvent('pcIndex', 'txt', '/navigation/酒店','^locCid:321^pos:2^txt:酒店+景点^');">酒店+景点</a>
+				                            <a href="/homeinn/">							
+				                                民宿客栈
+				                                <img src="//pic5.40017.cn/01/001/6e/1a/rBLkBVk4tzaANgJIAAAFAEOk3cw261.gif">
+				                            </a>
+				<!--                             <a href="http:/gangaohotel/">港澳台酒店</a>   -->
+				                            <a href="/hotel/liansuo/" rel="nofollow">品牌汇</a>
+				                       </span></div>
+				                </li>
+				                <li date-type="2002" class="">
+				                    <a href="/flights/home"><b>机票</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav"><a class="flight-submenu1" href="/flights/home">国内机票</a><a date-type="2012" href="/iflight/">国际机票</a><a date-type="" target="_blank" href="//tmc.ly.com/login">同程商旅</a></div>
+				                </li>
+				                <li date-type="2016" class="">                    
+				                    <a href="/huochepiao/"><b>火车票</b>&nbsp;</a>
+				                </li>
+				                <li date-type="2021" class=""><a href="https://bus.ly.com/" style="padding: 0 10px;"><b style="margin-right:4px;">汽车·船票</b><i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                	<div class="submenu-nav"><a class="bus-submenu1" href="https://bus.ly.com/" style="margin-left:230px;">汽车票首页</a><a href="//bus.ly.com/act/buscharter/index">团队包车</a><a href="//ship.ly.com/">船票<img src="//pic5.40017.cn/01/001/6e/1a/rBLkBVk4tzaANgJIAAAFAEOk3cw261.gif"></a></div>
+				                </li>     
+				                <li date-type="2003">       
+				                    
+				                    <a href="/scenery/"><b>景点</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav">
+				                        <span>
+				                            <a class="scenery-submenu1" href="/scenery/">国内景点</a>                            
+				                            <a href="/bustour/" rel="nofollow">周边跟团游</a>
+				                            <a href="//zby.ly.com/zizhuyou/">酒店+景点</a>
+				                           	<a href="/scenery/classifyindex.html" rel="nofollow">主题景点
+				                            <img src="//pic5.40017.cn/01/001/6e/1a/rBLkBVk4tzaANgJIAAAFAEOk3cw261.gif">
+				                            </a>                        
+				                             <a href="/activity/" rel="nofollow">景点活动</a>
+				                        	<a href="/tailor/" rel="nofollow">定制旅行</a>
+				                        	<a href="/scenery/BookSceneryTicket_228379.html" rel="nofollow">迪士尼</a>
+				                            <a href="/PreferredDestinations">全域旅游</a>                                                   
+				                        </span>
+				                    </div>
+				                </li>                
+				                <li date-type="2014" class="">   
+									<!--<p><em style="right: 14px;">HOT<i style="border-top: 6px solid #ff6535;"></i></em></p> -->                    
+				                    <a href="/bustour/"><b>周边游</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav"><span>                            
+				                            <a class="zmy-submenu1" href="/bustour/" rel="nofollow">周边跟团游</a>                            
+				                           	<a href="/scenery/">景点</a>
+				                            <a href="//zby.ly.com/zizhuyou/">酒店+景点</a>
+				                            <a href="/bustour/ThemeChannel.html" rel="=nofollow">快乐大巴</a>
+				                            <a href="//zby.ly.com/zizhuyou/fangche/" rel="nofollow">房车露营</a>
+				                            <a href="/tailor/" rel="nofollow">定制旅行</a>
+				                        </span></div>
+				                </li>
+				                <li date-type="2011" class="">
+				                    <a href="//gny.ly.com/"><b>境内游</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav"><a class="guonei-submenu1" href="//gny.ly.com/">境内游首页</a><a href="//gny.ly.com/temai/">境内游特卖</a><a href="/tailor/">定制旅行</a><a href="//gny.ly.com/TcSpecialLine/index?refid=154358435">同程专线</a></div>
+				                </li>
+				                <li date-type="2006">                    
+				                    <a href="/dujia/"><b>出境游</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav">
+				                        <span>
+				                            <a class="dujia-submenu1" href="/dujia/">出境首页</a>
+				                            <a href="/dujia/group/" id="group" mname="group">跟团游</a>
+				                            <a href="/dujia/freetour/" id="freetour" mname="freetour">自由行</a>                            
+				                            <a href="/visa" id="visa" mname="visa">签证</a>
+				<!--                             <a href="/dujia/wifi" >全球WiFi</a> -->
+				<!--                             <a date-type="2027" href="/dujia/wanle/" >当地玩乐</a> -->
+				<!--                             <a href="/globalscenery/" >海外门票</a>   -->
+				                            <a href="/global/wifi">全球WiFi</a>
+				                            <a date-type="2027" href="/global/">当地玩乐</a>
+				                            <a href="/global/scenery">海外·港澳台门票</a>
+				                            <a href="/tailor/" rel="nofollow">出境定制</a>
+				                        </span>
+				                    </div>
+				                </li>
+				                <li date-type="2007">
+				                    
+				                    <a href="/youlun/"><b>邮轮</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav">
+				                        <span>
+				                            <a class="youlun-submenu1" href="/youlun/">邮轮首页</a>
+				                            <a href="/youlun/zhuanti/tuandui/?lid=431">团队定制</a>
+				                            <a href="/youlun/yuanyang/" mname="yuanyang" rel="nofollow">海外航线</a>                            
+				                            <a href="/youlun/guonei/" mname="youlun/guonei">国内航线</a>
+				                            <a href="/youlun/Antarctic/" rel="nofollow">圆梦南北极</a>                                                        
+				                            <a href="/youlun/dreamcruises/">星梦邮轮</a>
+				                        </span>
+				                    </div>
+				                </li>
+				                <li date-type="2008">      
+				                    
+				                    <a href="/visa"><b>签证</b></a>
+				                </li>                                          
+				                <li date-type="2000" style="display:none">
+				                    <a href="/">分期游&nbsp;</a>
+				                </li>
+				                <li date-type="2000">
+				                    <a href="/public/dingzhiyou"><b>定制游</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav">                        
+				                        <a class="dz-submenu1" href="/tailor/">定制旅行</a>
+				                        <a href="/public/dtg/">大唐商旅</a>                        
+				                    </div>
+				                </li>
+				
+				                <li class="menujr" date-type="2029">
+				                    <a><b>金融</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav financialTab">
+				                        <a href="/Card/">礼品卡</a>                        
+				                        <a href="/mkt-web/module/portal-web/baoli/ad" target="_blank">企业融资</a>
+				                        <a href="/baoxian/">保险</a>
+				<!--                         <a href="/mkt-web/module/portal-web/baitiao/ad" target="_blank">白条</a> -->
+				                    </div>
+				                </li>
+				                <li class="menugl" date-type="2022">
+				                        
+				                    <a href="/travels/"><b>攻略</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>
+				                    <div class="submenu-nav">                                                
+				                        <a href="/Travels/Travel/Index" rel="nofollow">
+				                            <em><i>领游币</i></em>
+				                            写游记
+				                        </a>
+				                        <a href="/travels/member/index.html" rel="nofollow">个人主页</a>                        
+				                        <a href="/go/yanke/">验客</a>
+				                        <a href="/travels/">攻略游记</a>
+				<!--                         <a class="gl-submenu1" href="/go/">攻略主页</a> -->
+				                    </div>
+				                </li>
+				                <li class="menublh" date-type="2000">  
+				                    <p><em style="margin-left:-10px"><i>狂欢节</i></em></p>
+				                    <a href="/ningxia"><b>全域宁夏</b>&nbsp;<i class="icon01"></i><i class="icon02" style="display: none"></i></a>              
+				                   <div class="submenu-nav">                                                     	
+				<!--                         <a href="/ningxia/campaign" >嗨动神奇宁夏</a>
+				                        <a href="/ningxia/trip" >玩转神奇宁夏</a>
+				                        <a href="/ningxia/magic" >解密神奇宁夏</a>
+				                        <a href="/ningxia" >全域宁夏首页</a>        -->
+				                       	<a href="/ningxia/quanyupc">365天玩转全域宁夏</a>
+				                        <a href="/ningxia/wuxianpc">100种发现无限宁夏</a>
+				                        <a href="/ningxia/shenqipc">10分钟领略神奇宁夏</a>
+				                        <a href="/ningxia">全域宁夏首页</a>
+				                    </div>             
+				                </li>
+            				</ul>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+					
 		</div>
 		<div class="csliderMain"></div>
 		<div class="tour-content"></div>

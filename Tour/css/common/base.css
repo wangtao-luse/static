@@ -6,10 +6,16 @@ body{
 	color: #333;
 	font: normal normal normal 12px/20px Microsoft YaHei,Arial,sans-serif;
 }
-body,ul{padding: 0;margin: 0;}
+body,ul,input{padding: 0;margin: 0;}
 li{list-style: none;}
 img{border: 0;}
 a{text-decoration: none;}
+button, input, select, textarea {
+    vertical-align: middle;
+    font-size: 100%;
+    outline: 0;
+    font-family: 'Microsoft YaHei',Arial,sans-serif;
+}
 .clearfix:after{
 	content: ".";
 	display: block;
