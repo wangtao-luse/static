@@ -6,10 +6,13 @@ body{
 	color: #333;
 	font: normal normal normal 12px/20px Microsoft YaHei,Arial,sans-serif;
 }
-body,ul,input{padding: 0;margin: 0;}
+body,ul,input,p,div{padding: 0;margin: 0;}
 li{list-style: none;}
 img{border: 0;}
 a{text-decoration: none;}
+b,h1,h2,h3,h4,h5,h6,strong,th{
+	font-weight: 400;
+}
 button, input, select, textarea {
     vertical-align: middle;
     font-size: 100%;
