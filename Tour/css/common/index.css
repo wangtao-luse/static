@@ -4,6 +4,7 @@
 }
 .header .topNavWrapper{
 	background: #fafafa;
+	
 }
 .header .topNavWrapper .topNavPanel{
 	width: 1190px;
@@ -48,7 +49,8 @@
 }
 
 .header .headerWrapper{
-	min-width: 1190px;	
+	min-width: 1190px;
+	z-index: 1000;	
 }
 .header .headerWrapper .pageheader{
 	width: 1190px;
@@ -70,6 +72,7 @@
 	float: left;
 	line-height: 38px;
 	margin-top: 25px;
+	position: relative;
 }
 .header .headerWrapper .pageheader .logo-style .nowCity>a{
 	color: #666;
@@ -78,7 +81,13 @@
 	padding: 0 10px;
 	text-align: center;
 	margin-left: 10px;
+	border: 1px solid transparent;
+	position: relative;
 }
+.nowCity.active>a{
+	box-shadow: 0 0 8px #ccc;
+	border-color: #ddd;
+	}
 .header .headerWrapper .pageheader .logo-style .nowCity>a span{
 	height: 40px;
 	line-height: 40px;
@@ -91,6 +100,94 @@
 	background-position: -5px -115px;
 	margin-left: 5px;
 	vertical-align: middle;
+}
+.nowCity.active>a:after {
+    top: 40px;
+}
+.nowCity.active>a:after {
+    content: '';
+    position: absolute;
+    top: 38px;
+    left: 0;
+    height: 20px;
+    width: 112%;
+    background: #fff;
+    z-index: 1003;
+}
+#showChooseCity{
+	border:1px solid #ddd;
+	position: absolute;
+	background: #fff;
+	z-index: 1001;
+	padding: 0 20px;
+	box-shadow: 0 0 8px 0 #ccc;
+}
+.recom-city{
+	width: 430px;
+	
+}
+.rcc-ban{
+	border-bottom: 1px solid #eee;
+	height: 30px;
+}
+.rcc-ban li{
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	cursor: pointer;
+	margin-left: 40px;
+}
+.rcc-ban li:first-child {
+    margin-left: 0;
+}
+.rcc-ban .rcc-at span {
+    color: #00c77b;
+    font-weight: 700;
+    position: relative;
+}
+.rcc-ban .rcc-at span:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #00c77b;
+    background-image: linear-gradient(to right,#00bf63,#01c192);
+    left: 0;
+    bottom: -11px;
+}
+.rcc-con{
+	padding: 10px 0;
+	width: 458px;
+	overflow: hidden;
+}
+.rcc-con>span,.rcc-con div span span{
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	float: left;
+	margin-right: 21px;
+	margin-bottom: 6px;
+	cursor: pointer;
+	transition: all ease 0.2s;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+}
+.rcc-con div>span{
+	color: #f60;
+	display: block;
+	float: left;
+	width: 430px;
+	
+}
+.rcc-con div>span:first-child {
+    width: 12px;
+    font-size: 14px;
+    margin-right: 15px;
+    line-height: 22px;
+    font-weight: 700;
 }
 .header .headerWrapper .pageheader .s_box_outer{
 	float: right;
@@ -174,6 +271,7 @@
 
 .header .menuNavOuter{
 	min-width: 1190px;
+	z-index: 999;
 }
 .header .menuNavOuter .menuNavWrapper{
 	background-color: #00c07b;
@@ -380,7 +478,7 @@
 	margin-right: 30px;
 	position: relative;
 }
-.submenu-nav a:hover{
+.submenu-nav a:hover,.rcc-con>span:hover{
 	color: #ff5d3d;
 }
 .submenu-nav a>img{
