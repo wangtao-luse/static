@@ -72,6 +72,7 @@
 }
 .header .topNavLanguage div{
 	width: 145px;
+	height: 65px;
 	line-height: 20px;
 	border-width: 0 1px;
 	border-style: solid;
@@ -82,12 +83,15 @@
 .header .topNavLanguage.open div{
 	width: 145px;
 	height: 65px;
-	border-color: transparent!important;
-	border: 1px solid #ddd;
+	border: 1px solid transparent;
 	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
 	z-index: 3;
 }
-.header .topNavLanguage.open p{
+
+.header .topNavLanguage.open p,
+.header .topNavMyTour.open>span,
+.header .consumerService.open>span,
+.header .topjoinTeam.open>span{
 	content: "";
 	position: absolute;
 	top: 23px;
@@ -106,6 +110,7 @@
 	text-align: left;
 	color: #666!important;
 	padding-left: 15px;
+	margin-top: 5px;
 }
 .header .topNavLanguage div a img{
 	margin-right: 5px;
@@ -125,20 +130,13 @@
   z-index: 1;
 }
 .header .topNavMyTour.open>div{
-	 height: 112px;
+  height: 112px;
   width: 132px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  z-index: 3;
+  border: 1px solid transparent;
 }
-.header .topNavMyTour.open>span{
-	content: "";
-	position: absolute;
-	top: 23px;
-	left: 0;
-	width: 100%;
-	height: 10px;
-	z-index: 31;
-	display: block;
-	background: #fff;
-}
+
 .use-box {
     padding: 15px 0 8px 0;
 }
@@ -170,10 +168,10 @@
     width: 48px;
     text-align: left;
 }
-.my-list a {
+.topNavPanel .my-list a {
     line-height: 20px;
     display: block;
-    color: #666;
+    color: #666!important;
 }
 
 .header .topNavMyTour .member-no{
@@ -182,15 +180,35 @@
 	margin-right: 10px;
 	background: url(../../img/index/BfCGPi.png) no-repeat 0 -248px;
 }
+.header .consumerService.open>div{
+	height: 112px;
+	 box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  	z-index: 3;
+  	border: 1px solid transparent;
+}
+.consumerService div a:first-child {
+    margin-top: 5px;
+    
+}
+.header .consumerService>div{
+  line-height: 20px;
+  background: #fff;
+  z-index: 1;
+}
+.consumerService div a{
+	display: block;
+    width: 73px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 15px;
+    text-align: left;
+    color: #666;
+}
 .header .headerWrapper{
 	min-width: 1190px;
 	z-index: 1000;	
 }
-.header .topNavLanguage.open div{	
-	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
-	z-index: 3;
-	border: 1px solid #ddd;
-}
+
 .header .headerWrapper .pageheader{
 	width: 1190px;
 	margin: 0 auto;

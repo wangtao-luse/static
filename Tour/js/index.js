@@ -5,7 +5,12 @@ $(function(){
 	$(".topNavLanguage").mouseleave(function(){
 		$(this).removeClass("open");
 	});
-	
+	$(".topNavMyTour").hover(function(){
+		$(this).addClass("open");
+	});
+	$(".topNavMyTour").mouseleave(function(){
+		$(this).removeClass("open");
+	});
 	$("#menuNav li").hover(function(){
 		$("#menuNav li").find(".submenu-nav").css("display","none");		
 		var len=$(this).find(".submenu-nav").length;		
