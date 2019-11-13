@@ -3,8 +3,7 @@
 	background: #fff;
 }
 .header .topNavWrapper{
-	background: #fafafa;
-	
+	background: #fafafa;	
 }
 .header .topNavWrapper .topNavPanel{
 	width: 1190px;
@@ -27,30 +26,170 @@
 .header .topNavWrapper .topNavPanel .topLogin .register{
  padding: 0 6px 0 10px;
 }
-.header .topNavWrapper .topNavPanel .topNav{
+.header .topNav{
 	float: right;
 }
-.header .topNavWrapper .topNavPanel .topNav li{
+.header .topNav li{
 	float: left;
+	position: relative;
 }
-.header .topNavWrapper .topNavPanel .topNav li>a{
+.header .topNav li>a{
+	display: inline-block;
+	height: 28px;
 	padding: 0 15px;
+	position: relative;
+	z-index: 2;
+	
 }
-.header .topNavWrapper .topNavPanel .topNav li>a i{
+.topNav li.open>a{
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 0 16px #ccc;
+}
+.header .topNav li>a i{
 	display: inline-block;
 	width: 8px;
 	height: 5px;
 	background: url(../../img/index/tour@insprit.png) no-repeat;	
 	background-position: -5px -21px;
 	vertical-align: middle;
-	margin-left: 3px;
+	margin-left: 4px;
 	margin-top: -3px;
 	overflow: hidden;
 }
+.header .topNav li.open a i{
+	background-position: -5px -4px;
+}
+.header .topNav li>div{
+	position: absolute;
+	top: 28px;
+	left: 0;
+	height: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	transition: 0.2s height ease-in-out;
+}
+.header .topNavLanguage div{
+	width: 145px;
+	line-height: 20px;
+	border-width: 0 1px;
+	border-style: solid;
+	border-color: #ddd;
+	background: #fff;
+	z-index: 1;
+}
+.header .topNavLanguage.open div{
+	width: 145px;
+	height: 65px;
+	border-color: transparent!important;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+	z-index: 3;
+}
+.header .topNavLanguage.open p{
+	content: "";
+	position: absolute;
+	top: 23px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	z-index: 31;
+	display: block;
+	background: #fff;
+}
+.header .topNavLanguage div a{
+	display: block;
+	width: 145px;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	color: #666!important;
+	padding-left: 15px;
+}
+.header .topNavLanguage div a img{
+	margin-right: 5px;
+	margin-bottom: 1px;
+	vertical-align: middle;
+}
 
+
+.header .topNavLanguage div a:hover{
+	color:#ff5d3d ;
+}
+.header .topNavMyTour>div{
+  height: 112px;
+  width: 132px;
+  padding: 0 15px;
+  background: #fff;
+  z-index: 1;
+}
+.header .topNavMyTour.open>div{
+	 height: 112px;
+  width: 132px;
+}
+.header .topNavMyTour.open>span{
+	content: "";
+	position: absolute;
+	top: 23px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	z-index: 31;
+	display: block;
+	background: #fff;
+}
+.use-box {
+    padding: 15px 0 8px 0;
+}
+.use-box p{
+	margin-top: 8px;
+	float: left;
+}
+.use-box>div{
+	float: left;
+}
+.topNavPanel p a {
+    color: #00a0ff!important;
+}
+.my-list:before{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: 67px;
+    top: 0;
+    height: 5px;
+    width: 3px;
+}
+.my-list span:first-child {
+    margin-right: 30px;
+}
+.my-list span {
+    float: left;
+    display: block;
+    width: 48px;
+    text-align: left;
+}
+.my-list a {
+    line-height: 20px;
+    display: block;
+    color: #666;
+}
+
+.header .topNavMyTour .member-no{
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+	background: url(../../img/index/BfCGPi.png) no-repeat 0 -248px;
+}
 .header .headerWrapper{
 	min-width: 1190px;
 	z-index: 1000;	
+}
+.header .topNavLanguage.open div{	
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+	z-index: 3;
+	border: 1px solid #ddd;
 }
 .header .headerWrapper .pageheader{
 	width: 1190px;
@@ -68,13 +207,13 @@
 	text-align: center;
 	height: 100%;
 }
-.header .headerWrapper .pageheader .logo-style .nowCity{
+.nowCity{
 	float: left;
 	line-height: 38px;
 	margin-top: 25px;
 	position: relative;
 }
-.header .headerWrapper .pageheader .logo-style .nowCity>a{
+.nowCity>a{
 	color: #666;
 	font-size: 18px;
 	display: block;
@@ -83,16 +222,24 @@
 	margin-left: 10px;
 	border: 1px solid transparent;
 	position: relative;
+	/*z-index: 1002;*/
 }
 .nowCity.active>a{
 	box-shadow: 0 0 8px #ccc;
-	border-color: #ddd;
+	border: 1px solid transparent;
 	}
-.header .headerWrapper .pageheader .logo-style .nowCity>a span{
+.nowCity>a span{
+	display: inline-block;
+	max-width: 80px;
 	height: 40px;
 	line-height: 40px;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
 }
-.header .headerWrapper .pageheader .logo-style .nowCity>a i{
+.nowCity>a i{
 	display: inline-block;
 	width: 11px;
 	height: 6px;
@@ -101,22 +248,25 @@
 	margin-left: 5px;
 	vertical-align: middle;
 }
+
 .nowCity.active>a:after {
-    top: 40px;
-}
-.nowCity.active>a:after {
-    content: '';
+   content: '';
     position: absolute;
-    top: 38px;
-    left: 0;
-    height: 20px;
-    width: 112%;
-    background: #fff;
+    top: 31px;
+    left: -1px;
+    height: 15px;
+    width: 103%;
+    background:#fff;
     z-index: 1003;
+}
+.nowCity.active #showChooseCity{
+	border-color: transparent;
 }
 #showChooseCity{
 	border:1px solid #ddd;
 	position: absolute;
+	left: 10px;
+	top:40px;
 	background: #fff;
 	z-index: 1001;
 	padding: 0 20px;

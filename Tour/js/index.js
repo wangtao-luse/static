@@ -1,11 +1,9 @@
 $(function(){
 	$(".topNavLanguage").hover(function(){
 		$(this).addClass("open");
-		$(".topNavLanguage .second-menu").css("display","block");
 	});
 	$(".topNavLanguage").mouseleave(function(){
 		$(this).removeClass("open");
-		$(".topNavLanguage .second-menu").css("display","none");
 	});
 	
 	$("#menuNav li").hover(function(){
@@ -36,8 +34,10 @@ $(function(){
 	});
 	$(".nowCity").hover(function(){
 		$(this).addClass("active");
+		$("#showChooseCity").css("display","block");
 	});
 	$(".nowCity").mouseleave(function(){
-		//$(this).removeClass("active");
+		$(this).removeClass("active");
+		$("#showChooseCity").css("display","none");
 	});
 })
