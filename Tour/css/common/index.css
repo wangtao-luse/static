@@ -610,7 +610,7 @@
 	position: relative;
 }
 
-.pt-abroadservice ul>li:after{
+.pt-abroadservice>ul li:after{
   content: " ";
   display: block;
   width: 1px;
@@ -740,6 +740,7 @@
 
 .csliderMain{
 	width: 100%;
+	overflow: hidden;
 	background-color: #f5f5f5;
 }
 
@@ -748,17 +749,50 @@
 	height: 368px;
 	margin: 0 auto;
 	position: relative;
-	border: 1px solid green;
+	/*overflow: visible;*/
+}
+#sliderDiv:before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 415px;
+    width: 38px;
+    height: 16px;
+    background: url(../../img/index/ad-slider.png) no-repeat center;
+    z-index: 100;
 }
 .sliderCon{
 	height: 368px;
 	border: 1px solid red;
 	margin-left: -960px;
-	left: 50%;
 	position: relative;
+	left: 50%;
+	
 }
-.linka a{
+.sliderCon li{
+	position: absolute;
+	float: left;
+	height: 368px;
+}
+.linka img{
 	width: 1920px;
 	height: 368px;
 	display: block;
+}
+#userNav{
+	position: absolute;
+    right: 50%;
+    margin-right: -165px;
+    z-index: 200;
+    bottom: 10px;
+    border: 1px solid red;
+}
+#userNav li{
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: url(../../img/index/userNaN.png) no-repeat 2px 2px;
+}
+#userNav li.current{
+	background: url(../../img/index/userNaN.png) no-repeat 0 -30px;
 }
