@@ -11,6 +11,18 @@ $(function(){
 	$(".topNavMyTour").mouseleave(function(){
 		$(this).removeClass("open");
 	});
+	$(".consumerService").hover(function(){
+		$(this).addClass("open");
+	});
+	$(".consumerService").mouseleave(function(){
+		$(this).removeClass("open");
+	});
+	$(".topjoinTeam").hover(function(){
+		$(this).addClass("open");
+	});
+	$(".topjoinTeam").mouseleave(function(){
+		$(this).removeClass("open");
+	});
 	$("#menuNav li").hover(function(){
 		$("#menuNav li").find(".submenu-nav").css("display","none");		
 		var len=$(this).find(".submenu-nav").length;		

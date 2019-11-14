@@ -183,7 +183,7 @@
 .header .consumerService.open>div{
 	height: 112px;
 	 box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
-  	z-index: 3;
+  	 z-index: 3;
   	border: 1px solid transparent;
 }
 .consumerService div a:first-child {
@@ -203,6 +203,28 @@
     padding-left: 15px;
     text-align: left;
     color: #666;
+}
+.header .topjoinTeam div{
+	left: 0;
+	right: 0;
+	background: #fff;
+	z-index: 1;
+}
+.header .topjoinTeam.open>div{
+	height: 131px;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  	z-index: 3;
+  	border: 1px solid transparent;
+}
+.header .topjoinTeam>div a:first-child{
+	margin-top: 4px;
+}
+.header .topjoinTeam div a{
+	display: block;
+	line-height: 25px;
+	text-align: left;
+	color: #666!important;
+	padding-left: 15px;
 }
 .header .headerWrapper{
 	min-width: 1190px;
