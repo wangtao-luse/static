@@ -574,6 +574,7 @@
 }
 #submenuNavBg{
 	display: block;
+	width: 100%;
 	height: 36px;
 	overflow: hidden;
 	background: #fff;
@@ -694,6 +695,7 @@
 	transition: height 0s ease 150ms;
 	overflow: hidden;
 	z-index: 100;
+	position: absolute;
 }
 #submenuNavHoverBg .submenu-nav{
 	position: static;

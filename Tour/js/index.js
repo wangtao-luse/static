@@ -41,10 +41,9 @@ $(function(){
 		if(menuHtml){
 			$("#submenuNavHoverBg .submenu-nav").html(menuHtml);
 			$("#submenuNavHoverBg").css("display","block");
-			$("#submenuNavBg").css("display","none");
+			
 		}else{
 			$("#submenuNavHoverBg").css("display","none");
-			$("#submenuNavBg").css("display","block");
 		}	
 	});
 	$("#menuNav li").mouseleave(function(){
