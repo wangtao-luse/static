@@ -1,0 +1,27 @@
+#shortcut{
+	border-bottom: 1px solid #ddd;
+	background-color: #e3e4e5;
+}
+#shortcut .w{
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+}
+.w{
+	margin: auto;
+	width: 1190px;
+}
+#shortcut li{
+	float: left;
+}
+#shortcut a{
+	color: #999;
+}
+#shortcut .cw-icon{
+	height: 28px;
+	line-height: 28px;
+}
+#shortcut .dt{
+	padding-left: 7px;
+	padding-right:7px ;
+}
