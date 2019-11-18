@@ -25,3 +25,81 @@
 	padding-left: 7px;
 	padding-right:7px ;
 }
+#ttbar-login{
+	margin-right: 8px;
+}
+#shortcut .style-red{
+	color: #f10215;
+}
+#shortcut .dt{
+	padding-left: 7px;
+	padding-right: 7px;
+}
+#shortcut li.spacer{
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin: 11px 5px 0;
+	overflow: hidden;
+}
+#header{
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+#header .w{
+	height: 140px;
+	position: relative;
+}
+#logo{
+	width: 190px;
+	height: 120px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+#logo .logo-img{
+	background: url(../img/beer9.jpg) no-repeat;
+	background-position: 0 0;
+	width: 190px;
+	height: 120px;
+	display: block;
+	overflow: hidden;
+	font-size: 0;
+}
+.serach-m{
+	height: 60px;
+	position: relative;
+}
+#search .form{
+	width: 546px;
+	height: 32px;
+	border: 2px solid #e2231a;
+	position: absolute;
+	left: 260px;
+	top: 25px;
+}
+.serach-m .text{
+	width: 425px;
+	height: 26px;
+	line-height: 26px;
+	padding: 2px 44px 2px 17px;
+	color: #333;
+	font-size: 12px;
+	outline: none;
+	border: 1px solid transparent;
+	position: absolute;
+	top: 0;
+}
+.serach-m .button{
+	width: 58px;
+	height: 32px;
+	line-height: 32px;
+	border: none;
+	border-radius: 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #e1251b;
+	transition: background 0.2s ease;
+}
