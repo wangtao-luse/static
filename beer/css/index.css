@@ -125,6 +125,12 @@
 	cursor: pointer;
 }
 .photo-search-btn .upload-trigger{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
 	
 }
 .serach-m .button{
@@ -205,6 +211,6 @@
 	z-index: 3;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	-webkit-animation: promoShow .3s ease;
-	animation: promoShow .3s ease;
+	-webkit-animation: promoShow 0.3s ease;
+	animation: promoShow 0.3s ease;
 }
