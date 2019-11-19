@@ -11,6 +11,11 @@
 	margin: auto;
 	width: 1190px;
 }
+#ttbar-mycity .iconfont{
+	font-size: 14px;
+    color: #f10215;
+    margin-right: 4px;
+}
 #shortcut li{
 	float: left;
 }
@@ -49,6 +54,13 @@
 #header .w{
 	height: 140px;
 	position: relative;
+}
+#header .style-red{
+	color: #e1251b;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
 }
 #logo{
 	width: 190px;
@@ -90,6 +102,30 @@
 	border: 1px solid transparent;
 	position: absolute;
 	top: 0;
+	background: transparent none repeat scroll 0% 0%;
+	
+}
+.photo-search-btn{
+	position: absolute;
+	top: 10px;
+	right: 75px;
+	width: 19px;
+	height: 15px;
+	overflow: hidden;
+}
+.photo-search-btn .upload-bg{
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 14px;
+	font-size: 20px;	
+	font-family: iconfont,sans-serif;
+	text-align: center;
+	color: #9f9f9f;
+	cursor: pointer;
+}
+.photo-search-btn .upload-trigger{
+	
 }
 .serach-m .button{
 	width: 58px;
@@ -102,4 +138,73 @@
 	color: #fff;
 	background-color: #e1251b;
 	transition: background 0.2s ease;
+	position: absolute;
+	top: 0;
+	right: 0;
+	outline: none;
+}
+#hotwords{
+	position: absolute;
+	left: 260px;
+	top: 65px;
+	width: 550px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+#hotwords a{
+	float: left;
+	margin-right: 10px;
+}
+#hotwords a:hover{
+	color: #c81623;
+}
+#navitems{
+	height: 40px;
+	position: absolute;
+	left: 203px;
+	bottom: 0;
+	padding-top: 20px;
+	overflow: hidden;
+}
+#navitems ul,#navitems li{
+	float: left;
+}
+#navitems li{
+	margin-left: 1px;
+}
+#navitems a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 15px;
+	margin: 0 11px;
+	transition: color 0.2s ease;
+}
+#navitems-group1 .fore1 a, #navitems-group1 .fore2 a {
+    font-weight: 700;
+    color: #e1251b;
+}
+#navitems a:hover {
+    color:#c81623;
+}
+#treasure{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	width: 190px;
+	height: 120px;
+}
+.promo_lk{
+	background-image: url(../img/ad.png);
+	position: relative;
+	display: block;
+	width: 190px;
+	height: 120px;
+	z-index: 3;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	-webkit-animation: promoShow .3s ease;
+	animation: promoShow .3s ease;
 }
