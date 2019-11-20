@@ -214,3 +214,125 @@
 	-webkit-animation: promoShow 0.3s ease;
 	animation: promoShow 0.3s ease;
 }
+.fs{
+	margin-bottom: 30px;
+}
+.fs_inner{
+	height: 480px;
+	background-color: #f4f4f4;
+}
+.grid_c1{
+	width: 1190px;
+	margin: 0 auto;
+}
+.fs,.fs_inner{
+	position: relative;
+}
+.fs-col1{
+	width: 190px;
+}
+.fs-col1,.fs-col2{
+	float: left;
+	height: 480px;
+	margin-right: 10px;
+}
+.cate_menu{
+	height: 450px;
+	background-color: #fefefe;
+	margin-top:10px ;
+	padding: 10px 0;
+}
+.fs-col2{
+	width: 790px;	
+}
+.focus{
+	height: 470px;
+	margin-top: 10px;
+	border: 1px solid red;
+}
+.fs-col3{
+	width: 190px;
+	height: 480px;
+	float: right;	
+}
+.user{
+	height: 102px;
+	background: #fff;
+	margin-top: 10px;
+	
+}
+.news,.news2{
+	height: 130px;
+	background: #fff;	
+}
+.news .news_hd{
+	height: 20px;
+	padding: 10px 0 0;
+}
+.service{
+	height: 238px;
+}
+.service_entry{
+	background: #fff;
+	padding: 5px 0.5px;
+}
+.service_list{
+	height: 225px;
+	padding-top: 5px;
+}
+.beer_container.floor{
+	height: 340px;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+	
+}
+.grid_c1{
+width: 1190px;
+margin: 0 auto;
+background: #fff;
+}
+.top{
+ background: #fff;	
+}
+.box-hd{
+	height: 60px;
+	padding: 0 20px;
+}
+
+
+#b_lightning{
+	height: 340px;
+	background: #fff;
+	width: 1190px;
+	margin: 10px auto
+	
+}
+
+#b_niceGoods{
+	height: 260px;
+	background: #fff;
+	width: 1190px;
+	margin: 10px auto
+}
+#b-core2{
+	height: 340px;
+	background: #fff;
+	width: 1190px;
+	margin: 10px auto
+}
+#b_channels{
+	background: #fff;
+	width: 1190px;
+	margin: 10px auto;
+	height: 815px;
+}
+#b_feeds{
+	min-height: 305px;
+	width: 1190px;
+	margin: 10px auto;
+	background: #fff;
+}
+#b-footer{
+	width: 1190px;
+	margin: 10px auto;
+}
