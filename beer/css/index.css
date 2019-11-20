@@ -241,6 +241,20 @@
 	background-color: #fefefe;
 	margin-top:10px ;
 	padding: 10px 0;
+	color: #636363;
+}
+.cate18 .cate_menu_item{
+	height: 25px;
+	line-height: 25px;
+	
+}
+.cate_menu_item{
+	padding-left: 18px;
+}
+.cate_menu_lk{
+	color: #333;
+	font-size: 14px;
+	transition: color 0.2s ease;
 }
 .fs-col2{
 	width: 790px;	
@@ -285,11 +299,6 @@
 	margin-top: 20px;
 	margin-bottom: 20px;	
 	
-}
-.grid_c1{
-width: 1190px;
-margin: 0 auto;
-background: #fff;
 }
 .top{
  background: #fff;	
