@@ -1,2 +1,0 @@
-/* user-reg/3.0.0 common.js Date:2018-12-06 19:31:37 */
-seajs.use(["//misc.360buyimg.com/jdf/1.0.0/ui/fixable/1.0.0/fixable"],function(a){var b=location.host;if("qq.jd.com"==b)var c=$("<a class='feedback' href='http://surveys.jd.com/index.php?r=survey/index/sid/691262/lang/zh-Hans'/>");else var c=$("<a class='feedback' href='http://surveys.jd.com/index.php?r=survey/index/sid/447941/lang/zh-Hans'/>");$("body").append(c),c.fixable({x:"right",y:"bottom",xValue:0,yValue:"center"})});
