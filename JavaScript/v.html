@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/common/jquery-3.4.1.js.js" ></script>
+	</head>
+	<style>
+		.fr{
+			float:right;
+		}
+		.fl{
+			float:left;
+		}
+	</style>
+	<body>
+		<input  name="name" class="fl" />
+		<input  name="age" class="fl" value="55"/>
+		<input  name="start" class="fr" value="33"/>
+		<input  name="end" class="fr" value="55"/>
+		
+	</body>
+	<script>
+		$(function(){
+			
+			var data=["name","age","star","end"];
+			 $("input").each(function(index){
+			 	console.log(index);
+			 	if($(this).val()==$(this).attr("name")){
+			 		if($(this).val()!=""){
+			 		data[index]=$(this).val();
+			 	}else{
+			 		data[index]="";
+			 	}
+			 	}
+			 	
+			 });
+			
+			console.log(data);
+		});
+		
+		
+		
+		
+		
+		
+		/*var stu = {
+			"id":"1",
+			"name":"mike",
+			"age":"22",
+			"hobby":["游泳","打球"]
+			};
+		//迭代对象
+		 for(s in stu){
+		 	var key=s;
+		 	var value=stu[key];
+		 	var t= typeof value;
+		 	console.log(key+"-->"+value+"-->"+t);
+		 	
+		 }
+	
+	console.log("-----------------------");	
+var eachArr = function(arr){
+	    //迭代数组
+		arr.forEach(function(value,index){
+			//输出数值的下标和值
+			//console.log(index+"-->"+value);
+			//如果数组中的值是object对象;			
+			if(typeof value == "object"){
+				for(k in value){
+					//迭代该对象输出
+					//console.log(k+"-->"+value[k]+"-->"+typeof value[k]);
+					//如果该对象中有为object的属性;
+					if(typeof value == "object"){
+					
+						
+					}
+				}
+			}
+		});
+}
+var temp =["1","2",{"name":"Oliver","hobby":["游泳","打球"]}]
+		eachArr(temp);*/
+	</script>
+</html>

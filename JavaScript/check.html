@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/common/jquery-3.4.1.js.js" ></script>
+	</head>
+	<body>
+		<!--
+			1.同一单选组中,每个input必须添加相同的name属性;
+			2.默认选中checked
+		-->
+		<input type="radio" name="sex" class="boy" value="1" checked>男
+		<input type="radio" name="sex" class="girl" value="2">女
+		
+		<select class="select">
+			<option value="">请选择</option>
+			<option value="1">中国</option>
+			<option value="2">美国</option>
+			<option value="3">法国</option>
+			<option value="4">英国</option>
+		</select>
+		<input type="button" value="提交"  class="sub"/>
+		<input type="button" value="select的选中"  class="choose"/>
+		<br />
+		<input type="checkbox" name="hobby" value="1"/>看电影
+		<input type="checkbox" name="hobby" value="2"/>旅游
+		<input type="checkbox" name="hobby" value="3"/>烹饪
+		<input type="checkbox" name="hobby"  class="checkAll"/>全选
+		
+	</body>
+	<script>
+		$(function(){
+			//获取选择的radio的值;
+			var check = $("input[name='sex']:checked").val();
+			console.log(check);
+			//设置radio选中
+			//$(".girl").attr("checked",true);
+			//$(".girl").attr("checked",'true');
+			$(".girl").attr("checked","checked");
+			
+			//获取select选中的值;
+			$(".sub").click(function(){
+				var v = $(".select").val();
+				console.log(v);
+			});
+			//设置选中select中的某项值的方法
+			$(".choose").click(function(){
+				//方法1.设置val的值
+				$(".select").val("1");
+				//方法2.设置selected属性
+				$(".select option:last-child").attr("selected","selected");
+				
+				//jquery迭代
+				//https://blog.csdn.net/Woo_home/article/details/91375539
+				
+				
+			});			
+
+			$(".checkAll").click(function(){
+				var bl = $(this).prop("checked");
+				if(bl){//选中	
+					$("input[type='checkbox']").prop("checked",true);					
+				}else{
+					$("input[type='checkbox']").prop("checked",false);
+				}				
+			})
+			
+		});
+			
+		
+	</script>
+</html>

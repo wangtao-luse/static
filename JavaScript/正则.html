@@ -1,0 +1,62 @@
+<html>
+  <head> 
+  <script>
+   function validate_reg(){
+    var  search_value=  document.getElementById("search_value").value;
+	/**http://caibaojian.com/regexp-example.html
+	   \:在非特殊字符之前的反斜杠表示下一个字符是特殊的.
+	   ^:匹配输入的开始。
+	   $:匹配输入的结束。
+	   *:匹配前一个表达式0次或多次。等价于 {0,}
+	   +:匹配前面一个表达式1次或者多次。等价于 {1,}
+	   ?:匹配前面一个表达式0次或者1次。等价于 {0,1}
+	   .:（小数点）匹配除换行符之外的任何单个字符
+	   x|y:   匹配‘x’或者‘y’
+	   {n}:   n是一个正整数，匹配了前面一个字符刚好发生了n次
+	   {n,m}: n 和 m 都是整数。匹配前面的字符至少n次，最多m次。
+	   		  如果 n 或者 m 的值是0， 这个值被忽略.	
+	   [xyz]: 一个字符集合。匹配方括号中的任意字符，包括转义序列。
+	                  你可以使用破折号（-）来指定一个字符范围。
+	                  对于点（.）和星号（*）这样的特殊符号在一个字符集中没有特殊的意义。
+			 他们不必进行转义，不过转义也是起作用的。
+	   [^xyz]:一个反向字符集。也就是说，它匹配任何没有包含在方括号中的字符。
+	         你可以使用破折号（-）来指定一个字符范围。任何普通字符在这里都是起作用的。
+		\d:匹配一个数字,等价于[0-9]。
+		\D:匹配一个非数字字符,等价于[^0-9]。
+		():分组使用的字符为“(”和“)”，即左括号和右括号。每一个子表达式都可以当做一个整体来处理。
+                    （ 小括号就是括号内看成一个整体 ,中括号就是匹配括号内的其中一个）
+
+
+        正则表达式后面的全局标记 g 指定将该表达式应用到输入字符串中能够查找到的尽可能多的匹配。
+        表达式的结尾处的不区分大小写 i 标记指定不区分大小写。
+	**/
+	var  ruler=/^\d+$/;//整数
+	     ruler=/^([1-9]\d*|0)(\.\d{2})?$/; //小数(保留小数点后两位)和整数;
+		 ruler=/^(\-|\+)?([1-9]\d*|0)(\.\d{2})?$/; //小数(保留小数点后两位)和整数允许负数;
+		 ruler=/^(([1-9]\d)(\.\d{2})?)$|^100$/;//1-100以内的小数(保留小数点后两位)和整数;
+		 ruler=/^([1-9]\d*|0)([.]{1}[0-9]{1,2})?$/;//非负整数和小数(保留1到两位小数)
+         ruler=/^(([1-9]\d*)(\.\d{1,2})?)$|^(0\.\d{1,2})$/; //非负非零整数和小数(保留1到两位小数)
+         ruler=/\D+/g;//匹配非数字
+        var str="HT000DD13DDww1215";
+	    var result=str.replace(ruler,"");//将非数字替换为空字符串
+	    console.log(result);
+	    console.log(ruler);	
+	if(ruler.test(search_value)){
+	 document.getElementById("message").innerHTML="验证通过";	
+     document.getElementById("error").innerHTML="";	 
+    }else{
+     document.getElementById("error").innerHTML="验证失败";
+	  document.getElementById("message").innerHTML="";	
+	}
+   }
+  </script>
+  
+  </head>
+  <body>
+   数据：<input class="input-text" id="search_value">
+   
+   <input class="input-button" type="button" id="btn-submit" onclick="validate_reg()" value="验证">
+   <span id="message" style="color:green"></span>
+   <span id="error" style="color:red"></span>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<script type="text/javascript" src="a_data/jquery-1.js"></script>
+<script type="text/javascript" src="a_data/jquery.js"></script>
+<title>slider</title>
+<link href="a_data/jquery.css" rel="stylesheet" type="text/css">
+<style>
+
+	p{ width:100%; height:40px; font-size:20px; color:#333; line-height:40px; text-align:center; font-family:"微软雅黑"}
+
+</style>
+</head>
+<body>
+
+<p>slider1(maxSlides)</p>
+<div class="bx-wrapper" style="max-width: 620px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 86px;"><div class="slider1" style="width: 1115%; position: relative; transition-duration: 0s; transform: translate3d(-630px, 0px, 0px);"><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar7.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar4.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar5.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar6.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar7.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div>
+<div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider1').bxSlider({
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            maxSlides: 3,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider2(slideWidth auto)</p>
+<div class="bx-wrapper" style="max-width: 610px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 129px;"><div class="slider2" style="width: 1215%; position: relative; transition-duration: 0s; transform: translate3d(-2480px, 0px, 0px);"><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar4.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar5.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar6.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar7.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 300px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction bx-has-controls-auto"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link active">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start" href="">Start</a></div><div class="bx-controls-auto-item"><a class="bx-stop active" href="">Stop</a></div></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider2').bxSlider({
+
+            slideWidth: 300, 
+
+			auto: true,
+
+  			autoControls: true,
+
+            minSlides: 2,
+
+            maxSlides: 2,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider3(moveSlides)</p>
+<div class="bx-wrapper" style="max-width: 620px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 86px;"><div class="slider3" style="width: 1215%; position: relative; transition-duration: 0s; transform: translate3d(-630px, 0px, 0px);"><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar4.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar5.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar6.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar7.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div> 
+<div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div><div class="bx-pager-item"><a href="" data-slide-index="5" class="bx-pager-link">6</a></div><div class="bx-pager-item"><a href="" data-slide-index="6" class="bx-pager-link">7</a></div><div class="bx-pager-item"><a href="" data-slide-index="7" class="bx-pager-link">8</a></div><div class="bx-pager-item"><a href="" data-slide-index="8" class="bx-pager-link">9</a></div><div class="bx-pager-item"><a href="" data-slide-index="9" class="bx-pager-link">10</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider3').bxSlider({
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            maxSlides: 3,
+
+			moveSlides: 1,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider4(startSlide)</p>
+<div class="bx-wrapper" style="max-width: 620px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 86px;"><div class="slider4" style="width: 1215%; position: relative; transition-duration: 0s; transform: translate3d(-840px, 0px, 0px);"><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar4.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar5.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar6.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar7.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link active">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div><div class="bx-pager-item"><a href="" data-slide-index="5" class="bx-pager-link">6</a></div><div class="bx-pager-item"><a href="" data-slide-index="6" class="bx-pager-link">7</a></div><div class="bx-pager-item"><a href="" data-slide-index="7" class="bx-pager-link">8</a></div><div class="bx-pager-item"><a href="" data-slide-index="8" class="bx-pager-link">9</a></div><div class="bx-pager-item"><a href="" data-slide-index="9" class="bx-pager-link">10</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider4').bxSlider({
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            maxSlides: 3,
+
+			moveSlides: 1,
+
+			startSlide: 1,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider5(Vertical)</p>
+<div class="bx-wrapper" style="max-width: 200px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 182px;"><div class="slider5" style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -191.767px, 0px);"><div class="slide bx-clone" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar9.png"></div><div class="slide bx-clone" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar1.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar2.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar3.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar4.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar5.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar6.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar7.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar8.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar9.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide bx-clone" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar1.png"></div><div class="slide bx-clone" style="float: none; list-style: outside none none; position: relative; width: 200.4px; margin-bottom: 10px;"><img src="a_data/350x150textFooBar2.png"></div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider5').bxSlider({
+
+			mode: 'vertical',
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider6(Image)</p>
+<div class="bx-wrapper" style="max-width: 600px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 200px;"><div class="slider6" style="width: auto; position: relative;">
+<div class="slide" style="float: none; list-style: outside none none; position: absolute; width: 600px; z-index: 50; display: block;"><img src="a_data/600x200textFooBar1.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: absolute; width: 600px; z-index: 0; display: none;"><img src="a_data/600x200textFooBar2.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: absolute; width: 600px; z-index: 0; display: none;"><img src="a_data/600x200textFooBar3.png"></div>
+<div class="slide" style="float: none; list-style: outside none none; position: absolute; width: 600px; z-index: 0; display: none;"><img src="a_data/600x200textFooBar4.png"></div>
+</div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider6').bxSlider({
+
+			mode: 'fade',
+
+            slideWidth: 600, 
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider7(infiniteLoop hideControlOnEnd)</p>
+<div class="bx-wrapper" style="max-width: 600px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 200px;"><div class="slider7" style="width: 615%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x200textFooBar1.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x200textFooBar2.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x200textFooBar3.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x200textFooBar4.png"></div>
+</div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div></div><div class="bx-controls-direction"><a class="bx-prev disabled" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider7').bxSlider({ 
+
+            slideWidth: 600, 
+
+			infiniteLoop: false,
+
+			hideControlOnEnd: true,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider8(adaptiveHeight)</p>
+<div class="bx-wrapper" style="max-width: 600px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 200px;"><div class="slider8" style="width: 615%; position: relative; transition-duration: 0s; transform: translate3d(-610px, 0px, 0px);"><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x250textFooBar4.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x200textFooBar1.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x300textFooBar2.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x150textFooBar3.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x250textFooBar4.png"></div>
+<div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 600px; margin-right: 10px;"><img src="a_data/600x200textFooBar1.png"></div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider8').bxSlider({ 
+
+            slideWidth: 600, 
+
+			adaptiveHeight: true,
+
+			startSlides: 0, 
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+<p>slider9(ticker)</p>
+<div class="bx-wrapper" style="max-width: 620px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 86px;"><div class="slider9" style="width: 1215%; position: relative; transition-duration: 12s; transform: translate3d(-2100px, 0px, 0px); transition-timing-function: linear;">
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar4.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar5.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar6.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar7.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div>
+<div class="slide" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div>
+<div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar1.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar2.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar3.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar4.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar5.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar6.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar7.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar8.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar9.png"></div><div class="slide bx-clone" style="float: left; list-style: outside none none; position: relative; width: 200px; margin-right: 10px;"><img src="a_data/350x150textFooBar10.png"></div></div></div></div>
+<script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider9').bxSlider({ 
+
+            slideWidth: 200,
+
+			minSlides: 3,
+
+			maxSlides: 3,
+
+			ticker: true,
+
+			speed: 12000,
+
+			startSlides: 0, 
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+
+</body></html>

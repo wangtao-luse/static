@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <link rel="stylesheet" type="text/css" href="../css/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+	</head>
+	<body>
+		<!--https://blog.csdn.net/qq_37144354/article/details/79922048
+		-->
+		<div class="wrapper">
+			<div class="search">
+				<form id="searchForm">
+				  <input type="text" placeholder="请输入编号"  name="id"/>
+				  <input type="text" placeholder="请输入姓名" name="name"/>
+				  <input type="text" placeholder="请输入爱好" name="hobby"/>
+				  <input type="button" value="查询" onclick="serachFun('/test',$('#dg'),test,{'current': 1, 'size': 40,'k':'hyhmd'})" />
+				  
+				</form>
+			</div>
+			<div class="table">
+				<table id="dg"></table>
+			</div>
+		</div>
+		
+	</body>
+<script>
+	$.serializeObject = function (form) {
+    var o = {};
+    $.each(form.serializeArray(), function (index) {
+        if (o[this['name']]) {
+            o[this['name']] = filterSpecial(o[this['name']] + "," + this['value'])
+        } else {
+            o[this['name']] = filterSpecial(this['value'])
+        }
+    });
+    return o
+};
+//创建datagrid
+function initDataGrid(dataGridNode,newOptions){
+	//http://www.jeasyui.net/plugins/183.html
+	var options ={		
+		fitColumns:true,//自动扩大或缩小列的尺寸以适应网格的宽度并且防止水平滚动
+		pagination:true,//在数据网格（datagrid）底部显示分页工具栏
+		idField:'id',//标识字段
+		sortName:'id',//可以排序的列
+		sortOrder:'asc',//指定排序的方式,只能用 'asc' 或 'desc'
+		checkOnSelect:true,//当用户点击某一行时，则会选中/取消选中复选框。如果设置为 false 时，只有当用户点击了复选框时，才会选中/取消选中复选框。
+		singleSelect:true,//只允许选中一行
+		selectOnCheck:true,//如果设置为 true，点击复选框将会选中该行。如果设置为 false，选中该行将不会选中复选框。
+		nowrap:true,//设置为 true，则把数据显示在一行里。设置为 true 可提高加载性能。
+		pageNumber:1,//当设置了 pagination 属性时，初始化页码。
+		pageSize:(newOptions.postData&&newOptions.postData.page&&newOptions.postData.page.size?newOptions.postData.page:"100"),//当设置了 pagination 属性时，初始化页面尺寸。
+		pageList:[50, 100, 300, 500, 1000],//当设置了 pagination 属性时，初始化页面尺寸的选择列表。
+		toolbar: '#toolbar',//数据网格（datagrid）面板的头部工具栏
+		onLoadSuccess:function(data){
+			//当数据加载成功时触发
+		}
+	};
+	$.extend(options, newOptions);
+	dataGridNode.datagrid(options);
+	return dataGridNode;
+	
+}
+
+/*function ajaxDataGrid(url,dataGridNode,newoptions){
+	var options={"postData":{}};
+	$.extend(options,newoptions);
+	$.ajax({
+		type:"post",
+		url:"../person.json",
+		data:JSON.stringify(options.postData),
+		success:function(result){
+			 var formatData = {};
+			if(result.returnResult){
+				if(result.returnResult.records){
+					formatData.total = data.returnResult.total;
+                    formatData.rows = data.returnResult.records;
+				}
+			   options.data = formatData;
+			}
+			initDataGrid(dataGridNode,newoptions);
+		}
+	});
+}*/
+
+function test(options){
+	var op={
+		columns:[[
+				{field:'id',title:'编号',width:100},
+				{field:'name',title:'名字',width:100}
+		]],
+		data:[//{
+			//"total":"2",
+			//"rows":[
+				{"id":"01","name":"zhangsan"},
+				{"id":"02","name":"mk"}
+			//]
+		//}
+		]
+	}
+	return $.extend(op,options);
+}
+
+//通过JS方式创建datagrid
+/*$("#dg").datagrid({
+	columns:[[
+				{field:'id',title:'编号',width:100},
+				{field:'name',title:'名字',width:100}
+		]]
+});*/
+
+//为datagrid绑定本地数据
+var jsonstr ={
+	"total":"2",
+	"rows":[
+		{"id":"01","name":"zhangsan"},
+		{"id":"02","name":"mk"}
+	]
+};	
+$('#dg').datagrid('loadData', jsonstr);
+//查询所以支持带条件
+ function serachFun(url,dataGridNode,functionName,newoptions){
+ 	//1.序列化表单
+ 	//序列化表单内容为字符串,用于Ajax请求
+ 	var form1 = $("#searchForm").serialize();
+ 	console.log("serialize:"+form1);
+ 	//将页面表单序列化成一个JSON结构的对象。注意不是JSON字符串;
+ 	 var form2 = $("#searchForm").serializeArray();
+ 	 console.log(form2,form2[0],form2[1],form2[2]);
+ 	 //自定义一个全局的方法来序列化表单位一个对象
+ 	var formData = $.serializeObject($("#searchForm"));
+ 	console.log(formData);
+   //2.处理参数
+   var postData={"page":{}};
+   newoptions&&newoptions.k?postData[newoptions.k] = formData:"";
+   postData.page.current=newoptions&&newoptions.current?newoptions.current:"1";
+   postData.page.size=newoptions&&newoptions.size?newoptions.size:"100";
+   console.log(postData);
+   //3.构建initDataGrid;  
+  var op = functionName({postData:postData});
+   initDataGrid(dataGridNode,op);
+ 	
+ }
+ 
+
+function filterSpecial(value) {
+    return value.replace(/[']/g, '')
+}
+/**
+
+
+
+
+var getPeople =	function(){
+		var people={
+			"stu":[
+				{"id":"01","name":"zhangsan"},
+				{"id":"02","name":"mk"}
+			]
+		};
+		return people;
+	}
+
+ //根据id批量操作
+
+
+var myfun = function(title,url,dataGridNode,newOptions){
+	var rows=$("#dataGrid").datagrid("getChecked"); 
+     	if(rows.length==0){
+     		showErrorMsg('请选择一条数据.');
+             return;
+     	}
+     	var Ids = [];
+         for(var i=0;i<rows.length;i++){
+         	Ids.push(rows[i].id);
+         }
+         url=url+ids;
+       var options = getInitDialogOptions(title,url,btnId,btnText,newOptions);
+       $.extend(options, newOptions);
+       options.dataGridNode = dataGridNode;
+       parent.$.modalDialog(options)
+}
+function getInitDialogOptions(title,url,btnId,btnText,newOptions){
+ var options ={
+ 	title:title,
+ 	width:newOptions&&newOptions.width?newOptions.width:500,
+ 	height:newOptions&&newOptions.height?newOptions.height:300,
+ 	href:getContextPath()+url,
+ 	buttons:[{id:btnId,text:"保存"}]
+ }
+ newOptions?$.extend(options, newOptions):"";
+ return options;
+}
+function showErrorMsg(errorMsg) {
+    parent.$.messager.alert('提示', errorMsg, 'error')
+};
+function showInfoMsg(errorMsg) {
+    parent.$.messager.alert('提示', errorMsg, 'info')
+};
+
+
+//条件查询
+function searchFun(url, node, funcName, ops) {
+    var formData = $.serializeObject($('#searchForm'));
+    ops&&ops.nodeNames && ops.nodeNames.length > 0?
+        $.each(ops.nodeNames, function (index, value) {
+            postData[value] = $("#" + ops.nodes[index]).val();
+        }):"";
+    var postData={"page":{}};
+    ops&&ops.k?postData[ops.k] = formData:"";
+    postData.page.current = ops&&ops.c?ops.c:"1";
+    postData.page.size = ops&&ops.s? ops.s:"100";
+    var pageNode = node.closest(".datagrid-wrap").find(".pagination-page-list");
+    pageNode.length > 0 ? postData.page.size = pageNode.val() : "100";
+    initAjaxDataGrid(url, node, funcName({postData: postData}))
+}*/
+</script>
+</html>

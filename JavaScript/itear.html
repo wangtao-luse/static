@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>对象迭代</title>
+	</head>
+	<body>
+		<script>
+			//https://www.cnblogs.com/yucheng6/p/9650814.html
+			//对象是由键和值结构组成的集合，里面可以存储任意的数据，包括数组和对象等。
+			var stu ={"id":"1","name":"Mike","age":"18"};
+			//访问对象
+			 console.log(stu.id);
+			 console.log(stu["id"]);
+			//迭代方式
+			 for(k in stu){
+			 	var key=k;
+			 	var value=stu[k];
+			 	console.log(key+"--"+value);
+			 }
+		</script>
+	</body>
+</html>

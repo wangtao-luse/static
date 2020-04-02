@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript三元表达式</title>
+	</head>
+	<body>
+		<script>
+			//表达式 (expr1) ? (expr2) : (expr3)
+			//在 expr1 求值为 TRUE 时的值为 expr2，在 expr1 求值为 FALSE 时的值为 expr3。
+			//了解javaScript中的Boolean类型
+			var a="";
+			var b=null;
+			var c="1";
+			var d=0;
+			var e="Apple";
+			var o="orange";
+			var t=b?c:d;
+			console.log(t);
+			//使用条件结构
+			if(b){
+			 console.log(c);
+			}else{
+				console.log(d);
+			}
+			var f=b?c:d?e:o;
+			console.log(f);
+			//使用条件结构
+			if(b){
+				console.log(c);
+			}else if(d){
+				console.log(e);
+			}else{
+				console.log(o);
+			}
+			var dt = d&&o;
+			console.log("dt: "+dt);
+			//使用条件结构
+			if(d){
+				console.log("dt-->"+o)
+			}
+			var dd = d||o;
+			console.log("dd-->"+dd);
+			//使用条件结构
+			if(!d){
+				console.log(o);
+			}
+			//实际中的应用
+			//1.页面值的转义
+			var lx = 1;
+			var lxStr="";
+			var lxStr1="";
+			if(1==lx){
+				lxStr="待审核";
+			}else{
+				lxStr="审核通过";
+			}
+			console.log(lxStr);
+			lxStr1=(lx==1)?("待审核"):("审核通过");
+			console.log(lxStr1);
+			//2.处理参数;			
+			var options={width:100,height:100,"method":"post"};
+			function post(title,options){
+				var newOptions={
+					width:options&&options.width?options.width:500,
+					height:options&&options.height?options.height:600,
+					title:title
+				}
+				return newOptions;
+			}
+			console.log("width: "+options.width);
+			console.log(options["width"]);
+			console.log("method:"+options["method"])
+		</script>
+	</body>
+</html>

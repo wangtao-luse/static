@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+	</body>
+	<script type="text/javascript" src="js/common/jquery-3.4.1.js.js"></script>
+	<script>
+		/**
+		 * 相关博客:
+		 * https://www.cnblogs.com/weblv/p/5249841.html
+		 * https://www.cnblogs.com/wang715100018066/p/5997770.html
+		 * https://blog.csdn.net/younghaiqing/article/details/84107435
+		 */
+		//1.添加一个新的全局函数
+		$.foo = function() {
+			console.log("全局函数");
+		}
+		//调用
+		$.foo();
+		//2.使用extend();
+		$.extend({
+			add: function() {
+				console.log("add--->全局函数")
+			}
+		});
+		$.add();
+
+		//3.使用命名空间
+		$.mySlider = {
+			slider: function() {
+				console.log("slider");
+			}
+		}
+		$.mySlider.slider();
+	</script>
+	<script>
+		console.log($($)); //返回jquery对象
+		//4.添加jQuery插件的两种方式
+		(function($) {
+			$.fn.extend({
+				test1: function() {
+					console.log("test");
+				}
+			})
+		})(jQuery);
+
+		//调用
+		$("body").test1();
+		(function($) {
+			$.fn.test2 = function() {
+				console.log("test2");
+			}
+		})(jQuery);
+		//调用
+		$($).test2();
+
+		$(function($) {
+			$.fn.test3 = function() {
+				console.log("test3");
+			}
+		}(jQuery));
+		//调用
+		$($).test3();
+	</script>
+	<script>
+		/*; $(function ($, window, document, undefined) {}());
+			;(function ( $, window, document, undefined ){
+		 				//函数体内具体代码
+		     })(jQuery, window,document);
+			的解释相关博客*/
+		/*	1.https://www.cnblogs.com/yuqingfamily/p/5774994.html
+			https://www.cnblogs.com/baiJr/p/6135979.html
+			https://blog.csdn.net/qq814965130/article/details/79420977?utm_source=blogxgwz7
+			http://www.bcty365.com/content-47-805-1.html*/
+	</script>
+	<script>
+	
+	</script>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<p id="p"> offset</p>
+		<input type="button" value="测试" id="button-test"/>
+		<script>
+			/**
+			 * Event 对象代表事件的状态，
+			 * 比如事件在其中发生的元素、
+			 * 键盘按键的状态、鼠标的位置、
+			 * 鼠标按钮的状态。
+			 * 事件通常与函数结合使用，
+			 * 函数不会在事件发生前被执行！
+			 */
+			
+			var btn = document.getElementById("button-test");
+			 btn.onclick = function(e){
+			 	var event = e || window.event;
+			 	var mx = event.pageX;
+			 	var my = event.pageY;
+			 	console.log(mx +" "+my);
+			 	var dX = $(this).offset().left;
+                var dY = $(this).offset().top;
+			 	
+			 	
+			}
+			 var p = document.getElementById("p");
+			 console.log(p.offsetLeft+","+p.offsetTop)
+		</script>
+	</body>
+</html>
