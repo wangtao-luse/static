@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#index-layout{
+				width: 1030px;
+				position: relative;
+				
+			}
+			.north{
+				height: 50px;
+				background: red;
+			}
+			.west{
+				position: absolute;
+				left: 0;
+				top: 50px;
+				width: 230px;
+				background: black;
+			}
+			.center{
+				position: absolute;
+				left: 230px;
+				top: 50px;
+				background: grey;
+				width: 800px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="index-layout">
+			<div class="north">north</div>
+			<div class="west">
+				 <ul>
+				 	<li><a href="tindex.html" target="myiframe">首页</a></li>
+				 	<li><a href="t-mager.html"target="myiframe">用户管理</a></li>
+				 	<li><a href="i-a.html" target="myiframe">会员中心</a></li>
+				 </ul>
+			</div>
+			<div class="center">center
+			<iframe name="myiframe" style="width: 100%;height: 100%;"></iframe>
+			</div>
+		</div>
+	</body>
+</html>

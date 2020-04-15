@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/icon.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+
+	</head>
+	<body>
+		<div id="sm1" data-toggle="topjui-sidemenu" data-options="data:data">
+       </div>
+		<div id="sm" style="width:300px"></div>
+        <script>
+        	var data = [{
+	        text: 'Item1',
+	        iconCls: 'icon-sum',
+	        state: 'open',
+	        children: [{
+	            text: 'Option1'
+	        },{
+	            text: 'Option2'
+	        },{
+	            text: 'Option3',
+	            children: [{
+	                text: 'Option31'
+	            },{
+	                text: 'Option32'
+	            }]
+	        }]
+	    },{
+	        text: 'Item2',
+	        iconCls: 'icon-more',
+	        children: [{
+	            text: 'Option4'
+	        },{
+	            text: 'Option5'
+	        },{
+	            text: 'Option6'
+	        }]
+	    }];
+        	$('#sm').sidemenu({
+                    data: data
+                }); 
+        </script>
+              
+	</body>
+</html>

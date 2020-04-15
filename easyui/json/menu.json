@@ -1,0 +1,643 @@
+[
+	{
+		"children": [
+			{
+				"preId": 1,
+				"attributes": {
+					"url": "/member/hydaSelect"
+				},
+				"text": "会员查询",
+				"id": "1001"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/hyshSelect"
+				},
+				"text": "会员审核",
+				"id": "1002"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/blacklist"
+				},
+				"text": "黑名单管理",
+				"id": "1003"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/hyroleSelect"
+				},
+				"text": "会员角色管理",
+				"id": "1004"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/psResetSelect"
+				},
+				"text": "忘记密码审核",
+				"id": "1008"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/simulationLogin"
+				},
+				"text": "模拟登录",
+				"id": "1005"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/memberRegisterSelect"
+				},
+				"text": "会员注册查询",
+				"id": "1006"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/hyLogSelect"
+				},
+				"text": "会员登录日志",
+				"id": "1007"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/tradelist"
+				},
+				"text": "交易属性修改记录",
+				"id": "1009"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/mbdjglSelect"
+				},
+				"text": "买办等级管理",
+				"id": "1010"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/selectVMHyxyqrjlPage"
+				},
+				"text": "会员协议确认查询",
+				"id": "10017"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/simulationSelect"
+				},
+				"text": "模拟登录历史",
+				"id": "1011"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/phoneSelect"
+				},
+				"text": "操作员手机重置审核",
+				"id": "1012"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/selectHypjPage"
+				},
+				"text": "会员评级列表",
+				"id": "1013"
+			}, {
+				"preId": 1,
+				"attributes": {
+					"url": "/member/sxedsqSelect"
+				},
+				"text": "授信额度申请表管理",
+				"id": "1014"
+			}
+		],
+		"text": "会员管理",
+		"id": 1
+	}, {
+		"children": [
+			{
+				"preId": 2,
+				"attributes": {
+					"url": "/resource/yjShoppingddSelect"
+				},
+				"text": "议价信息查询",
+				"id": "2001"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/contractList"
+				},
+				"text": "合同管理",
+				"id": "2002"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/quartz/erpxf/reErpxf"
+				},
+				"text": "ERP下发管理",
+				"id": "2004"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/unpaidContract"
+				},
+				"text": "待付款合同管理",
+				"id": "2005"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/selectTdhByListPage"
+				},
+				"text": "提单管理",
+				"id": "2011"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/selectJsdListPage"
+				},
+				"text": "结算单管理",
+				"id": "2014"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/bgPage"
+				},
+				"text": "合同变更管理",
+				"id": "2070"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/jypjSelect"
+				},
+				"text": "交易评价",
+				"id": "2030"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/resource/selectJjccPage"
+				},
+				"text": "竞买申请审核",
+				"id": "2019"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/resource/jjgcSelectPage"
+				},
+				"text": "竞价过程",
+				"id": "2085"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/resource/jjjgSelectPage"
+				},
+				"text": "竞价结果",
+				"id": "2080"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/resource/jjccwtPage"
+				},
+				"text": "竞买委托管理",
+				"id": "2084"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/resource/jmglPage"
+				},
+				"text": "竞买管理",
+				"id": "2086"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/jjwyclPage"
+				},
+				"text": "竞价违约处理",
+				"id": "2087"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/zhishuSelect"
+				},
+				"text": "指数管理",
+				"id": "2090"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/yxdSelect"
+				},
+				"text": "意向单管理",
+				"id": "2092"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/jkContractSelect"
+				},
+				"text": "借款合同",
+				"id": "2093"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/contract/repaymentSelect"
+				},
+				"text": "还款单",
+				"id": "2094"
+			}, {
+				"preId": 2,
+				"attributes": {
+					"url": "/quartz/bankcommitePage"
+				},
+				"text": "华瑞银行下发",
+				"id": "2095"
+			}
+		],
+		"text": "交易管理",
+		"id": 2
+	}, {
+		"children": [
+			{
+				"preId": 3,
+				"attributes": {
+					"url": "/member/giftPage"
+				},
+				"text": "礼品管理",
+				"id": "3001"
+			}, {
+				"preId": 3,
+				"attributes": {
+					"url": "/member/pointOrderPage"
+				},
+				"text": "配送管理",
+				"id": "3005"
+			}, {
+				"preId": 3,
+				"attributes": {
+					"url": "/member/rewardPage"
+				},
+				"text": "积分获取明细",
+				"id": "3002"
+			}, {
+				"preId": 3,
+				"attributes": {
+					"url": "/member/redeemPage"
+				},
+				"text": "积分使用明细",
+				"id": "3003"
+			}, {
+				"preId": 3,
+				"attributes": {
+					"url": "/member/pointCollectPage"
+				},
+				"text": "积分汇总查询",
+				"id": "3004"
+			}
+		],
+		"text": "积分管理",
+		"id": 3
+	}, {
+		"children": [
+			{
+				"preId": 4,
+				"attributes": {
+					"url": "/platform/ympzSelect"
+				},
+				"text": "页面配置管理",
+				"id": "4001"
+			}, {
+				"preId": 4,
+				"attributes": {
+					"url": "/platform/ptggSelect"
+				},
+				"text": "公告管理",
+				"id": "4002"
+			}
+		],
+		"text": "网站管理",
+		"id": 4
+	}, {
+		"children": [
+			{
+				"preId": 5,
+				"attributes": {
+					"url": "/resource/zymdSelect"
+				},
+				"text": "挂牌物资一览表",
+				"id": "5001"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/vCZfqdZfqdmxPage"
+				},
+				"text": "保证金付款报表",
+				"id": "5002"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/vCThdThdmxPage"
+				},
+				"text": "保证金提货报表",
+				"id": "5003"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/vContractPage"
+				},
+				"text": "保证金执行报表",
+				"id": "5004"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/queryMemberCountPage"
+				},
+				"text": "交易员成交统计表",
+				"id": "5005"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/zfqdmxReport"
+				},
+				"text": "支付明细一览表",
+				"id": "5006"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/selectBzjwzylbPage"
+				},
+				"text": "保证金物资一览表",
+				"id": "5007"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/bytdzdPage"
+				},
+				"text": "宝盈通对账单",
+				"id": "5009"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/swDataPage"
+				},
+				"text": "商委数据",
+				"id": "5008"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/contractYqPage"
+				},
+				"text": "保证金逾期跟踪表",
+				"id": "5010"
+			}, {
+				"preId": 5,
+				"attributes": {
+					"url": "/contract/bgwzmxPage"
+				},
+				"text": "保管物资明细表",
+				"id": "5011"
+			}
+		],
+		"text": "报表管理",
+		"id": 5
+	}, {
+		"children": [
+			{
+				"preId": 6,
+				"attributes": {
+					"url": "/platform/messageSelect"
+				},
+				"text": "短信发送清单",
+				"id": "6001"
+			}
+		],
+		"text": "短信管理",
+		"id": 6
+	}, {
+		"children": [
+			{
+				"preId": 7,
+				"attributes": {
+					"url": "/resource/qyDianpuglSelect"
+				},
+				"text": "企业店铺管理",
+				"id": "7001"
+			}, {
+				"preId": 7,
+				"attributes": {
+					"url": "/resource/grDianpuglSelect"
+				},
+				"text": "买办店铺管理",
+				"id": "7002"
+			}
+		],
+		"text": "店铺管理",
+		"id": 7
+	}, {
+		"children": [
+			{
+				"preId": 8,
+				"attributes": {
+					"url": "/platform/openingtimeSelect"
+				},
+				"text": "交易时间设置",
+				"id": "8001"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/quartz/systemLogSelect"
+				},
+				"text": "系统日志查询",
+				"id": "8002"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/platform/selectQuartzPage"
+				},
+				"text": "定时任务管理",
+				"id": "8003"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/platform/parameterSelect"
+				},
+				"text": "平台参数设置",
+				"id": "8004"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/resource/oneZypmSelect"
+				},
+				"text": "一级品种设置",
+				"id": "8005"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/resource/twoZypmSelect"
+				},
+				"text": "二级品种设置",
+				"id": "8006"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/resource/pmZypmSelect"
+				},
+				"text": "品名设置",
+				"id": "8007"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/resource/zyphSelect"
+				},
+				"text": "牌号设置",
+				"id": "8008"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/resource/selectZygcPageSelect"
+				},
+				"text": "钢厂设置",
+				"id": "8009"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/resource/warehouseSettings"
+				},
+				"text": "仓库设置",
+				"id": "8010"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/platform/fwkzSelect"
+				},
+				"text": "平台访问管理",
+				"id": "8012"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/platform/qxmxSelect"
+				},
+				"text": "页面日志控制",
+				"id": "8013"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/platform/servicenameSelect"
+				},
+				"text": "服务日志控制",
+				"id": "8014"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/quartz/sbbcjl/sbbcjlbListPage"
+				},
+				"text": "服务调用失败管理",
+				"id": "8015"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/platform/webServiceRequest"
+				},
+				"text": "WebService接口访问",
+				"id": "8016"
+			}, {
+				"preId": 8,
+				"attributes": {
+					"url": "/quartz/qrtzresultlistPage"
+				},
+				"text": "每日定时执行记录",
+				"id": "8017"
+			}
+		],
+		"text": "平台设置",
+		"id": 8
+	}, {
+		"children": [
+			{
+				"preId": 9,
+				"attributes": {
+					"url": "/contract/tcmxPage"
+				},
+				"text": "考核物资明细管理",
+				"id": "9001"
+			}, {
+				"preId": 9,
+				"attributes": {
+					"url": "/contract/tcPage"
+				},
+				"text": "考核交易员管理",
+				"id": "9002"
+			}, {
+				"preId": 9,
+				"attributes": {
+					"url": "/contract/jyymlmxglPage"
+				},
+				"text": "交易员毛利明细管理",
+				"id": "9007"
+			}
+		],
+		"text": "绩效管理",
+		"id": 9
+	}, {
+		"children": [
+			{
+				"preId": 10,
+				"attributes": {
+					"url": "/platform/deptSelect"
+				},
+				"text": "部门设置",
+				"id": "100011"
+			}, {
+				"preId": 10,
+				"attributes": {
+					"url": "/platform/positionSelect"
+				},
+				"text": "职务设置",
+				"id": "100012"
+			}, {
+				"preId": 10,
+				"attributes": {
+					"url": "/platform/employeeSelect"
+				},
+				"text": "员工设置",
+				"id": "100013"
+			}, {
+				"preId": 10,
+				"attributes": {
+					"url": "/platform/roleSelect"
+				},
+				"text": "员工角色管理",
+				"id": "100014"
+			}, {
+				"preId": 10,
+				"attributes": {
+					"url": "/platform/employeeLogSelect"
+				},
+				"text": "员工登录日志",
+				"id": "100015"
+			}
+		],
+		"text": "员工设置",
+		"id": 10
+	}, {
+		"children": [
+			{
+				"preId": 11,
+				"attributes": {
+					"url": "/contract/selectXyjPage"
+				},
+				"text": "信用账户金管理",
+				"id": "2019"
+			}, {
+				"preId": 11,
+				"attributes": {
+					"url": "/contract/selectXyjsyjlPage"
+				},
+				"text": "信用金使用记录",
+				"id": "2021"
+			}, {
+				"preId": 11,
+				"attributes": {
+					"url": "/contract/selectXyjSqPage"
+				},
+				"text": "信用金申请记录",
+				"id": "2020"
+			}
+		],
+		"text": "信用金管理",
+		"id": 11
+	}
+]

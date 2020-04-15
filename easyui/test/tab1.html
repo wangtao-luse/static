@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="css/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/icon.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+	<div>1.通过标记创建标签页</div>
+	<div id="tt" class="easyui-tabs" style="width:500px;height:250px;">
+    <div title="Tab1" style="padding:20px;display:none;">
+		tab1
+    </div>
+    <div title="Tab2" data-options="closable:true" style="overflow:auto;padding:20px;display:none;">
+		tab2
+    </div>
+    <div title="Tab3" data-options="iconCls:'icon-reload',closable:true" style="padding:20px;display:none;">
+		tab3
+    </div>
+</div>
+   <div>2.编程创建标签页</div>
+   <div class="wrapper">
+   		<div id="index-layout">
+   		</div>
+   </div>
+   
+  
+
+ <script>
+ 	$("#index-layout").tabs({
+ 		border:true,
+ 		fit:false
+ 		
+   });
+ 	$('#index-layout').tabs('add',{
+	    title:'首页',
+	    content:'Tab Body',
+	    closable:false
+    
+ 	});
+ 	$('#index-layout').tabs('add',{
+	    title:'用户管理',
+	    content:'用户管理内容',
+	    closable:true
+    
+ 	});
+ </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		var stu ={
+			"id":"01",
+			"name":"amy"
+		}
+		var stu1 ={"id":"02","name":"mike","age":"18"}
+	    console.log("stu"+JSON.stringify(stu));
+	    console.log("stu1"+JSON.stringify(stu1));
+	    $.extend(stu, stu1);
+	    console.log("stu"+JSON.stringify(stu));
+	    console.log("stu1"+JSON.stringify(stu1));
+	</script>
+</html>
