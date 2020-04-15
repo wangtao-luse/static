@@ -17,17 +17,24 @@ a{
 	color: inherit;
 	text-decoration: none;
 }
-.button{
-	display: inline-block;
-	padding: 0 16px;
-	font-size: 14px;
-	color: #8590a6;
-	line-height: 32px;
-	text-align: center;
+button{	
+	padding: 0;
+	font:inherit;
+	color: inherit;
+	line-height: 32px;	
 	background: none;
-	border: 1px solid;
-	border-radius: 3px;
+	border: none;
 	cursor: pointer;
+	outline: none;
+}
+.button{
+display: inline-block;
+padding: 0 16px;	
+font-size: 14px;
+color: #8590a6;
+text-align: center;
+border: 1px solid;
+border-radius: 3px;
 }
 .appHeader{
 background: #fff;
@@ -141,5 +148,14 @@ input.input{
 	margin-left: 16px;
 }
 
-
-
+.appHeader-profile{
+	float: right;
+	
+}
+.pushNotifications{
+	float: right;
+}
+.avatar {
+    background: #fff;
+    border-radius: 50%;
+}
