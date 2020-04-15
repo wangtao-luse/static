@@ -9,6 +9,11 @@
     <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
 	</head>
 	<body>
+		<div>
+			1.从已有的表格元素创建数据网格（datagrid），在 html 中定义列、行及数据。<br />
+			2.适用于纯页面
+		
+		</div>
 		<table class="easyui-datagrid">
 		    <thead>
 				<tr>
@@ -26,6 +31,10 @@
 				</tr>
 			</tbody>
 		</table>
+		<div>
+			1.通过 <table> 标记创建数据网格（datagrid）。嵌套的 th标签定义表格中的列。
+		
+		</div>
 		<table class="easyui-datagrid" style="width:400px;height:250px"
     data-options="url:'datagrid_data.json',fitColumns:true,singleSelect:true">
     <thead>
@@ -36,5 +45,17 @@
 		</tr>
     </thead>
 </table>
+<div>使用 javascript 创建数据网格（datagrid）</div>
+<table id="dg"></table>
+<script>
+	$('#dg').datagrid({
+    url:'datagrid_data.json',
+    columns:[[
+		{field:'code',title:'Code',width:100},
+		{field:'name',title:'Name',width:100},
+		{field:'price',title:'Price',width:100,align:'right'}
+    ]]
+});
+</script>
 	</body>
 </html>

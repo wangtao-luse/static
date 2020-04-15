@@ -1,0 +1,13 @@
+.topstory-container{
+	width: 1000px;
+	padding: 0 16px;
+	margin: 10px auto;
+}
+.topstory-mainColumn{
+	width: 694px;
+	margin-right: 10px;
+	float: left;
+}
+.globalSideBar{
+	width: auto;
+}
