@@ -21,7 +21,7 @@ button{
 	padding: 0;
 	font:inherit;
 	color: inherit;
-	line-height: 32px;	
+	line-height: inherit;	
 	background: none;
 	border: none;
 	cursor: pointer;
@@ -29,12 +29,14 @@ button{
 }
 .button{
 display: inline-block;
-padding: 0 16px;	
+padding: 0 16px;
+line-height: 32px;	
 font-size: 14px;
 color: #8590a6;
 text-align: center;
 border: 1px solid;
 border-radius: 3px;
+
 }
 .appHeader{
 background: #fff;
@@ -100,6 +102,7 @@ min-width: 1032px;
 	height: 34px;
 	padding: 4px 10px;
 	box-sizing: border-box;
+	position: relative;
 	font-size: 14px;
 	border: 1px solid #ebebeb;
 	border-radius: 3px;
@@ -113,6 +116,18 @@ min-width: 1032px;
 .searchBar-input{	
 	width: 326px;
 }
+
+.search-icon{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/search_px.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 7px;
+	top: 9px;
+}
+
 .input{
 	background: transparent;
 	padding: 0;
